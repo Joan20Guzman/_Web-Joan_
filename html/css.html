@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../imagenes/logo.png" alt="No se pudo visualizar el contenido">
+        <a href="../index.html">inicio</a>
+        <a href="etiquetas.html">Etiquetas</a>
+        <a href="atributos.html">Atributos</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="acercade.html">Acerca</a>
+    </header>
+    <br>
+    <nav>
+        <h1>Contenidos</h1>
+     <ol id="lista1">
+        <li><a href="#css">¿Qué es CSS?</a></li>
+        <li><a href="#utilizar">¿Cómo utilizar CSS con HTML?</a></li>
+        <li><a href="#linea">CSS en línea.</a></li>
+        <li><a href="#interno">CSS interno.</a></li>
+        <li><a href="#externo">CSS Externo.</a></li>
+     </ol>
+    </nav>
+    <br>
+    <section id="css">
+        <h2>CSS</h2>
+        <p>El diseño de una página o sitio web necesita un lenguaje común para que los navegadores puedan interpretarlo y mostrarlo a las personas de la forma correcta. Pero también lo requieren para que otros diseñadores hagan las modificaciones necesarias para su optimización. <br>
+            Uno de estos lenguajes es el CSS, un gran aliado del HTML que transforma la experiencia de tus visitantes. Con este artículo, aprenderás todo lo que necesitas saber sobre sus funciones y ventajas.</p>
+        <article>
+            <H3>¿Que es Css?</H3>
+            <p>El CSS (Cascading Style Sheets) son las siglas en inglés para «hojas de estilo en cascada». Basicamente, podría definirse como un tipo de lenguaje que permite definir y crear la presentación visual de un documento ya estructurado y escrito en un lenguaje de marcado como puede ser HTML. Es decir, permite generar el diseño visual de páginas web e interfaces de usuario. <br>
+                CSS es necesario en el diseño web y la programación frontend para crear experiencias web dinámicas y atractivas. Por ejemplo, CSS ofrece herramientas para aplicar transformaciones y animaciones a elementos. Las transformaciones permiten rotar, escalar y mover elementos en la página. Las animaciones, por otro lado, pueden hacer que los elementos cambien gradualmente de un estado a otro, agregando interactividad y vida a la página. <br>
+            para mas información aqui hay un video explicando el tema:</p>
+            <iframe width="686" height="386" src="https://www.youtube.com/embed/yF5xtcLjTMo" title="💻¿QUÉ ES CSS Y PARA QUÉ SIRVE?💻 | CSS EXPLICADO EN 5 MINUTOS | Para que Sirve CSS y Qué es" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>Para que sirve</h3>
+            <p>Con CSS, puedes crear reglas para decirle a tu sitio web cómo quieres mostrar la información y guardar los comandos para elementos de estilo (como fuentes, colores, tamaños, etc.) separados de los que configuran el contenido. <br>
+                Además, puedes crear formatos específicos útiles para comunicar tus ideas y producir experiencias más agradables, en el aspecto visual, para los usuarios del sitio web.</p>
+            <h3>Diferencias entre html y css</h3>
+            <p>Veamos una lista de sus diferencias:</p>
+            <table>
+                <tr>
+                    <th>caracteristica</th>
+                    <th>Html</th>
+                    <th>Css</th>
+                </tr>
+                <tr>
+                    <td>Propósito</td>
+                    <td>Estructurar el contenido de la web.</td>
+                    <td>Estilizar y dar diseño al contenido.</td>
+                </tr>
+                <tr>
+                    <td>Tipo de lenguaje</td>
+                    <td>Lenguaje de marcado.</td>
+                    <td>Lenguaje de hojas de estilo.</td>
+                </tr>
+                <tr>
+                    <td>Sintaxis</td>
+                    <td>Basada en etiquetas (&lt;tag&gt;).</td>
+                    <td>Basada en selectores y propiedades.</td>
+                </tr>
+                <tr>
+                    <td>Función</td>
+                    <td>Añadir texto, imágenes, enlaces, etc.</td>
+                    <td>Definir colores, fuentes, márgenes y disposición.</td>
+                </tr>
+                <tr>
+                    <td>Ejemplo de uso</td>
+                    <td>Crear un título o un párrafo.</td>
+                    <td>Cambiar el color o el tamaño del título.</td>
+                </tr>
+                <tr>
+                    <td>Dependencia</td>
+                    <td>Funciona sin CSS, pero es básico.</td>
+                    <td>Depende de HTML para estilizar algo.</td>
+                </tr>
+            </table>
+            <p>A pesar de sus diferencias ambos trabajan juntos para crear una página web completa y visualmente agradable.</p>
+        </article>    
+    </section>
+    <section id="utilizar">
+        <h2>¿Cómo utilizar CSS con HTML?</h2>
+        <ol>
+            <li>Escribe reglas para la apariencia de tu sitio.</li>
+            <li>Conoce los componentes de la regla.</li>
+            <li>Utiliza comentarios para probar tu código.</li>
+            <li>Añade CSS a tu HTML.</li>
+        </ol>
+        <article>
+            <h3>Escribe reglas para la apariencia de tu sitio.</h3>
+            <p>Las personas que ya están familiarizadas con HTML notarán que la sintaxis de CSS es un poco distinta. En lugar de hacer un listado del contenido de la página, CSS utiliza las reglas asignadas a elementos HTML, un documento HTML completo o varios de ellos. Estas son procesadas por el navegador web cuando carga el archivo HTML. <br></p>
+            <figure>
+                <figcaption>Una regla en CSS luce así:</figcaption>
+                <img src="../imagenes/ejemplo_css.jfif" alt="No se pudo realizar">
+            </figure>
+           <h3>Conoce los componentes de la regla</h3>
+           <p>Como lo muestra la imagen anterior, existen cuatro componentes principales: selector, declaraciones, propiedades y valores. </p>
+           <h3>selector</h3>
+           <figure>
+                <figcaption>Todas las reglas CSS comienzan con un selector. Este indica la parte del documento donde se aplica la regla. A este le siguen una o más declaraciones dentro de corchetes.</figcaption>
+                <img src="../imagenes/selector.webp" alt="no se pudo visualizar">
+           </figure>
+            <h4>Declaraciones</h4>
+            <p>Después del selector, sigue el bloque de declaración: un par de corchetes que contienen una o más declaraciones CSS. Una de estas declaraciones le dice al navegador qué estilo brindar al elemento seleccionado gracias a sus dos aspectos: una propiedad y un valor. Cada declaración termina con un punto y coma (;). </p>
+            <h4>propiedades</h4>
+            <p>Como la primera parte de una declaración, una propiedad CSS le indica al navegador cuál característica de estilo del elemento debe cambiarse. Existen muchas propiedades CSS que afectan diferentes cosas: color, tamaño, fuente, forma o locación en una página.</p>
+            <h4>Valores</h4>
+            <p>Como la primera parte de una declaración, una propiedad CSS le indica al navegador cuál característica de estilo del elemento debe cambiarse. Existen muchas propiedades CSS que afectan diferentes cosas: color, tamaño, fuente, forma o locación en una página. <br>
+            Por ejemplo en los colores las propiedades serian tan simples como una palabra(red,blue,etc.)</p>
+           <h3>Utiliza comentarios para probar tu código</h3>
+           <p>Al igual que con HTML, puedes escribir comentarios en CSS. Estos comentarios son ignorados por el navegador, por lo que no son visibles para el visitante de tu página, pero ayudan a crear contexto y notas para tu código. <br>
+            Para comentar en CSS, escribe: /*texto con tu comentario*/</p>
+            <p>Los comentarios también pueden usarse para probar tu CSS. Para deshabilitar una regla o declaración, solo comenta el código y luego elimina ese comentario del código para reactivar la regla:</p>
+            <img src="../imagenes/comentarios.png" alt="No se pudo visualizar">
+            <h3>Añade CSS a tu HTML</h3>
+            <p>Por supuesto, CSS no sirve de mucho si no está vinculado a un archivo HTML. Existen tres estilos para llevar a cabo esta importante tarea: mediante un CSS externo (external), CSS interno (internal) o CSS en línea (inline). A continuación, veremos las características de estos tres estilos de CSS.</p>
+        </article>
+    </section>
+    <section id="linea">
+        <h3 id="linea">CSS en línea.</h3>
+        <p>CSS en línea se ubica dentro de una etiqueta HTML para cambiar el estilo de un elemento en específico. La sintaxis inline es un poco diferente de lo que hemos visto, pues la declaración está escrita como el valor del atributo de estilo.</p>
+        <figure>
+            <img src="../imagenes/ejemplo_linea.png" alt="No se pudo realizar">
+            <figcaption>CSS en línea se ubica dentro de una etiqueta HTML para cambiar el estilo de un elemento en específico. La sintaxis inline es un poco diferente de lo que hemos visto, pues la declaración está escrita como el valor del atributo de estilo.</figcaption>
+        </figure>
+        <p>CSS en línea se ubica dentro de una etiqueta HTML para cambiar el estilo de un elemento en específico. La sintaxis inline es un poco diferente de lo que hemos visto, pues la declaración está escrita como el valor del atributo de estilo.</p>
+    </section>
+    <section id="interno">
+        <h3>CSS interno.</h3>
+        <p>El CSS interno es un código CSS incrustado en un documento HTML. Está escrito dentro del elemento &lt;style&gt;, que se acomoda en la sección de &lt;head&gt;:</p>
+        <img src="../imagenes/ejemplo_interno.webp" alt="No se pudo visualizar">
+        <p>El CSS interno es un código CSS incrustado en un documento HTML. Está escrito dentro del elemento &lt;style&gt;, que se acomoda en la sección de &lt;head&gt;: </p>
+    </section>
+    <section id="externo">
+        <h3>CSS Externo.</h3>
+        <p>El CSS externo existe en su propio archivo, el cual está enlazado a un documento HTML con una etiqueta &lt;link&gt;. Es el método más usado para añadir CSS a HTML, ya que una hoja de estilo externa puede dictar el estilo de diferentes documentos HTML. Esto permite que los desarrolladores hagan cambios a lo ancho del sitio con un solo archivo CSS. <br>
+            Para crear un archivo CSS, escribe tu código en cualquier editor de texto o editor de código y guarda el archivo con la extensión .css para vincularlo con un archivo de HTML; almacena tus HTML y CSS en la misma carpeta y luego, pega el siguiente código dentro de la sección &lt;head&gt; del archivo HTML: <br>
+          <strong> &lt;link rel="stylesheet" target="_blank" rel="noopener" href="style.css"&gt;</strong></p>
+        <p>Agrega en «style.css» el nombre de tu archivo CSS. Las reglas de este archivo se aplicarán a cualquier archivo HTML que haga referencia a él con el elemento &lt;link&gt; de arriba.</p>
+        <img src="../imagenes/externo.png" alt="No se pudo visualizar">
+    </section>
+   <footer>
+        <table>
+            <tr>
+                <th>Quienes somos:</th>
+                <th>cliente:</th>
+                <th>informaciones:</th>
+                <th>conctacto:</th>
+            </tr>
+
+            <tr>
+                <td>En JG-tecno, somos una mini empresa de tecnología dedicada a desarrollar soluciones innovadoras en software y tecnología. Nos especializamos en la creación de programas personalizados que transforman ideas en herramientas prácticas para personas y empresas.</td>
+                <td>atencion al cliente</td>
+                <td>politicas de privacidad</td>
+                <td>telefono:849-999-3344</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>   
+                <td>terminos y condiciones</td>
+                <td>JG-tecno@gmail.com</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>politicad de cookies</td>
+                <td></td>
+            </tr>
+        </table>
+   </footer>
+</body>
+</html>

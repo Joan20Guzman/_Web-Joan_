@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../imagenes/logo.png" alt="No se pudo visualizar el contenido">
+        <a href="../index.html">inicio</a>
+        <a href="etiquetas.html">Etiquetas</a>
+        <a href="atributos.html">Atributos</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="acercade.html">Acerca</a>
+    </header>
+    <br>
+    <nav>
+        <h1>Contenidos</h1>
+        <ol id="lista1">
+        <li><a href="#documento">Etiquetas de documento</a>
+            <ol>
+                <li> <a href="#html">html</a></li>
+                <li><a href="#head">head</a></li>
+                <li><a href="#body">body</a></li>
+            </ol>
+            </li>
+    
+            <li><a href="#meta">Etiquetas de Meta Datos.</a>
+            <ol>
+                <li><a href="#meta2">meta</a></li>
+                <li><a href="#style">style</a></li>
+                <li><a href="#title">title</a></li>
+                <li><a href="#base">base</a></li>
+                <li><a href="#link">link</a></li>
+            </ol>
+            </li>
+      
+            <li><a href="#grupo">Etiquetas de Agrupacion.</a>
+            <ol>
+                <li><a href="#p">p</a></li>
+                <li><a href="#hr">hr</a></li>
+                <li><a href="#ur">ul</a></li>
+                <li><a href="#div">div</a></li>
+                <li><a href="#figure">figure</a></li>
+                <li><a href="#figcaption">figcaption</a></li>
+            </ol>
+            </li>
+    
+            <li><a href="#texto">Etiquetas de textuales.</a>
+            <ol>
+                <li><a href="#a">a</a></li>
+                <li><a href="#span">span</a></li>
+                <li><a href="#sub">sub</a></li>
+                <li><a href="#sup">sup</a></li>
+                <li><a href="#cite">cite</a></li>
+            </ol>
+            </li> 
+               
+            <li><a href="#semanticas">Etiquetas Semanticas.</a>
+            <ol>
+                <li><a href="#nav">nav</a></li>
+                <li><a href="#section">section</a></li>
+                <li><a href="#article">article</a></li>
+                <li><a href="#header">header</a></li>
+                <li><a href="#main">main</a></li>
+                <li><a href="#footer">footer</a></li>
+            </ol>
+            </li>      
+        </ol> 
+    </nav>
+    <br>
+    <section id="documento">
+        <h2>Etiquetas de documentos</h2>
+        <p>Las etiquetas de documentos en HTML son las que forman la estructura básica de un archivo HTML. Estas etiquetas organizan el contenido y definen cómo se presentará en el navegador.</p>
+        <article>
+            <h3>&lt;!DOCTYPE html&gt;</h3>
+            <img src="../imagenes/ejemplo_etiqueta_html.PNG" alt="No se pudo visualizar">
+            <p>Esta estiqueta declara el tipo de documento y especifica la versión de HTML que se está utilizando (HTML5 en este caso). <br>
+                Es obligatoria y debe estar al principio del documento.</p>
+
+            <h3 id="html">&lt;html&gt;</h3>
+            <img src="../imagenes/ejemplo_etiqueta_html1.PNG" alt="No se pudo visualizar">
+            <p>La etiqueta &lt;html&gt; en HTML se utiliza para definir el inicio y el final de un documento HTML. Es el contenedor raíz de todo el contenido de la página web. Todo lo que está dentro de esta etiqueta forma parte del documento HTML. <br>
+                Sin la etiqueta &lt;ml&gt;, los navegadores no pueden interpretar correctamente el contenido como un documento HTML estructurado.</p>
+
+            <h3 id="head">head</h3>
+            <img src="../imagenes/ejemplo_etiqueta_head.PNG" alt="No se pudo visualizar">
+            <p>La etiqueta &lt;head&gt; en HTML se utiliza para contener metadatos e información sobre el documento. Estos elementos no se muestran directamente en la página web, pero son esenciales para definir cómo debe comportarse el documento y cómo será interpretado por los navegadores y motores de búsqueda. <br>
+                Sin &lt;head&gt;, la página podría carecer de información importante que afecta tanto la experiencia del usuario como el rendimiento del sitio.</p>
+
+            <h3 id="body">&lt;body&gt;</h3>
+            <img src="../imagenes/ejemplo_etiqueta_body.PNG" alt="No se pudo visualizar">
+            <p>La etiqueta &lt;body&gt; en HTML se utiliza para contener todo el contenido visible de una página web, así como los elementos interactivos que el usuario puede ver y con los que puede interactuar en un navegador. <br>
+                Esta etiqueta es importante, ya que, es el contenedor principal de todo lo que los usuarios ven e interactúan en una página y permite separar el contenido visible y funcional de la página del contenido técnico o de configuración que está en &lt;head&gt;.</p>
+        </article>
+    </section>
+    <section id="meta">
+        <h2>Etiquetas de Meta Datos</h2>
+        <p>Las etiquetas de metadatos en HTML se utilizan dentro del elemento &lt;head&gt; para proporcionar información adicional sobre el documento. Aunque no son visibles para los usuarios, son importantes para los navegadores, motores de búsqueda y otros servicios. <br>
+            Una de sus característica es que no necesita una etiqueta de cierre.</p>
+        <article>
+            <h3 id="meta2">&lt;meta&gt;</h3>
+            <p>La etiqueta &lt;meta&gt; en HTML se utiliza para definir metadatos sobre un documento web. Los metadatos no son visibles para los usuarios, pero son esenciales para que los navegadores, motores de búsqueda y otros servicios entiendan cómo manejar o interpretar el contenido de la página.</p>
+            <figure>
+                <img src="../imagenes/ejemplo_etiqueta_meta.PNG" alt="No se pudo visualizar">
+                <figcaption>meta charset es una etiqueta muy utilizada.</figcaption>
+            </figure>
+            <H3>Tipos mas comunes de la etiqueta</H3>
+            <figure>
+                <figcaption>Codificación de caracteres:</figcaption>
+                <img src="../imagenes/ejemplo_etiqueta_meta.PNG" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Configuración para dispositivos móviles:</figcaption>
+                <img src="../imagenes/ejemplo_etiqueta_movil.PNG" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Descripción del documento (SEO):</figcaption>
+                <img src="../imagenes/ejemplo_etiqueta_descripcion.PNG" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Palabras clave (menos utilizado hoy en día):</figcaption>
+                <img src="../imagenes/ejemplo_etiqueta_clave.PNG" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Autor del contenido:</figcaption>
+                <img src="../imagenes/ejemplo_etiqueta_autor.PNG" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Indicaciones para motores de búsqueda (robots):</figcaption>
+                <img src="../imagenes/ejemplo_etiqueta_robot.PNG" alt="No se pudo visualizar">
+            </figure>
+            <p>La etiqueta &lt;meta&gt; es fundamental en el desarrollo de páginas web porque proporciona información clave sobre el documento tanto a los navegadores como a los motores de búsqueda. Ayuda a garantizar que el contenido se interprete correctamente mediante la especificación del conjunto de caracteres, mejora la experiencia del usuario al optimizar la visualización en dispositivos móviles, y contribuye al posicionamiento SEO al incluir descripciones y palabras clave. Además, permite controlar el comportamiento del navegador, como redirecciones o almacenamiento en caché, y facilita la accesibilidad de la página en diferentes contextos y dispositivos, haciendo que sea una herramienta esencial para la funcionalidad y visibilidad de un sitio web.</p>
+           
+            <h3 id="style">&lt;Style&gt;</h3>
+            <p>La etiqueta &lt;style&gt; en HTML se utiliza para definir estilos CSS directamente dentro de un documento HTML. Estos estilos afectan a la presentación de los elementos en la página, como colores, tamaños, tipografías y posicionamientos. La etiqueta &lt;style&gt; se coloca dentro del elemento &lt;head&gt; y aplica los estilos al contenido del documento.</p>
+            <img src="../imagenes/ejemplo_etiqueta_style.PNG" alt="No se pudo visualizar">
+            <h3>Ventajas:</h3>
+            <p>La etiqueta &lt;style&gt; es ideal para proyectos pequeños o rápidos, ya que permite incluir estilos CSS directamente en el documento HTML sin necesidad de crear un archivo externo. Esto simplifica el desarrollo inicial y facilita la visualización inmediata de los cambios durante la fase de pruebas o prototipos. También es útil cuando los estilos son específicos de una sola página, evitando la necesidad de gestionar un archivo CSS separado, lo cual puede ahorrar tiempo en proyectos simples o temporales.</p>
+            <h3>Desventajas:</h3>
+            <p>A pesar de su simplicidad, el uso de &lt;style&gt; tiene importantes limitaciones. En proyectos más grandes, su uso puede generar confusión y dificultar la escalabilidad, ya que mezclar contenido HTML con estilos CSS rompe la separación de responsabilidades. Esto no solo afecta la organización del código, sino también su mantenibilidad, especialmente si el equipo de desarrollo crece o el proyecto se expande. Además, al no permitir la reutilización de estilos, puede aumentar la duplicación de código y afectar negativamente al rendimiento, ya que los navegadores no pueden aprovechar la caché como lo hacen con archivos CSS externos.</p>
+            <h3>¿Cuándo es mejor usar &lt;style&gt;</h3>
+            <p>El uso de &lt;style&gt; es más apropiado en proyectos pequeños, prototipos o pruebas rápidas donde la prioridad es visualizar resultados inmediatos y no se requiere escalabilidad. También puede ser útil para aplicar estilos temporales o específicos a una página que no compartirán otras partes del sitio. Sin embargo, en proyectos más complejos o a largo plazo, lo mejor es utilizar archivos CSS externos, que garantizan una mayor organización, escalabilidad y un mejor rendimiento gracias a la caché del navegador.</p>
+
+            <h3 id="title">&lt;title&gt;</h3>
+            <p>La etiqueta &lt;title&gt; en HTML define el título de un documento web. Este título es crucial porque se muestra en la pestaña del navegador y se utiliza por motores de búsqueda y sistemas de marcadores para identificar y clasificar la página. Además, el contenido de esta etiqueta aparece como texto de enlace en los resultados de búsqueda, por lo que es clave para la experiencia del usuario y la optimización para motores de búsqueda (SEO).</p>
+            <img src="../imagenes/TITLE.png" alt="">
+            <h3>Buenas practicas para usar &lt;title&gt;</h3>
+            <ul>
+                <li>Se breve pero descriptivo: Lo ideal es mantener el título entre 50 y 60 caracteres para que no se trunque en los resultados de búsqueda.</li>
+                <li>Incluye palabras clave relevantes: Asegúrate de que las palabras clave principales de la página estén presentes, pero evita el exceso de palabras clave (keyword stuffing).</li>
+                <li>Evita títulos genéricos: Un título como "Página de inicio" o "Documento HTML" no es informativo ni atractivo.</li>
+            </ul>
+            <figure>
+                <figcaption>Ejemplo de mal uso:</figcaption>
+                <img src="../imagenes/ejemplo_malo1.PNG" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Ejemplo de buen uso</figcaption>
+                <img src="../imagenes/ejemplo_bueno1.PNG" alt="No se pudo visualizar">
+            </figure>
+            <p>La etiqueta &lt;title&gt; es esencial para cualquier página web porque afecta tanto la experiencia del usuario como el rendimiento en buscadores. Un título bien redactado mejora la visibilidad, la accesibilidad y la eficacia de la página, convirtiéndose en un elemento imprescindible para un diseño web exitoso.</p>
+
+            <h3 id="base">&lt;base&gt;</h3>
+            <p>La etiqueta &lt;base&gt; en HTML se utiliza para establecer una URL base para todos los enlaces relativos en un documento. Esto significa que cualquier enlace que no tenga una URL completa utilizará la URL especificada en la etiqueta &lt;base&gt; como punto de referencia. La etiqueta &lt;base&gt; debe colocarse dentro del elemento &lt;head&gt; y tiene un único atributo: href, que define la URL base.</p>
+            <img src="../imagenes/ejemplo_etiqueta_base.PNG" alt="No se pudo visualizar">
+
+            <h3>ventajas</h3>
+            <p>Una de las principales ventajas de la etiqueta &lt;base&gt; es que facilita la gestión de enlaces relativos en un sitio web. Al definir una URL base, los enlaces relativos dentro del documento se resuelven automáticamente en relación con esta base. Esto significa que si el sitio cambia de dominio o estructura de directorios, solo necesitas modificar la URL base una vez, en lugar de actualizar cada enlace o recurso individualmente. Esto hace que el mantenimiento de sitios web grandes sea más sencillo y menos propenso a errores. Además, usando la etiqueta &lt;base&gt;, se pueden utilizar rutas relativas más simples sin la necesidad de especificar la URL completa, lo que puede ahorrar tiempo y esfuerzo al escribir el código.</p>
+
+            <h3>Deventajas</h3>
+            <p>A pesar de sus beneficios, la etiqueta &lt;base&gt; también tiene algunas desventajas. Una de las principales limitaciones es que solo se puede usar una etiqueta &lt;base&gt; por documento, lo que significa que solo se puede definir una URL base para todos los enlaces relativos en una página. Esto puede ser problemático si se necesita establecer diferentes URLs base para diferentes secciones de un sitio o si se utiliza un enfoque más complejo con múltiples subdirectorios. Además, los enlaces absolutos no se ven afectados por la etiqueta &lt;base&gt;, lo que puede generar confusión si no se entiende correctamente cómo interactúan los enlaces relativos y absolutos.</p>
+
+            <h3>¿Por qué deberías usar la etiqueta &lt;base&gt;?</h3>
+            <p>La etiqueta &lt;base&gt; es especialmente útil en proyectos de sitios web grandes o dinámicos, donde se utiliza una estructura de enlaces relativos y se prevé un cambio de dominio o estructura de carpetas en el futuro. Usarla te permite ahorrar tiempo y esfuerzo al actualizar los enlaces cuando hay cambios en la URL base, evitando la necesidad de editar cada enlace individualmente. También puede ser útil cuando se tienen muchas páginas que requieren la misma raíz de URL, como en un sitio web corporativo o de comercio electrónico. Sin embargo, es importante ser consciente de sus limitaciones, como la incompatibilidad con múltiples URLs base o la confusión que podría generar en proyectos más complejos. En resumen, usar la etiqueta &lt;base&gt; simplifica la gestión de enlaces relativos, pero debe ser aplicada de forma cuidadosa en función de la estructura del sitio web.</p>
+
+            <h3 id="link">&lt;link&gt;</h3> 
+            <p>La etiqueta &lt;link&gt; en HTML se utiliza principalmente para vincular recursos externos, como hojas de estilo (CSS), íconos de página, fuentes y más. A diferencia de las etiquetas &lt;a&gt; y &lt;img&gt;, que se utilizan para enlaces y recursos visibles en el documento, &lt;link&gt; no es visible para los usuarios. Generalmente se coloca en el elemento &lt;head&gt; del documento y puede incluir varios atributos importantes para controlar cómo y qué recursos se vinculan.</p>   
+            <h3>atributos principales de la etiqueta:</h3>
+            <ol>
+                <li> <b>rel:</b> Especifica la relación entre el documento actual y el recurso vinculado. Este atributo es obligatorio y sus valores más comunes incluyen:
+                <ul>
+                    <li><b>stylesheet:</b>Se utiliza para vincular una hoja de estilo externa CSS.</li>
+                    <li><b>icon:</b>Para vincular un ícono de página (favicon).</li>
+                    <li><b>preload:</b>Para cargar de forma anticipada recursos que serán utilizados más adelante en la página.</li>
+                </ul>
+                </li>
+                <li><b>href:</b>Define la URL del recurso al que se vincula. Es obligatorio y debe proporcionar la ruta al archivo que se quiere enlazar.</li>
+                <li><b>type:</b>Especifica el tipo de contenido del recurso. En el caso de las hojas de estilo, por ejemplo, se utiliza type="text/css", pero generalmente este atributo es opcional si el tipo se deduce del contexto.</li>
+                <li><b>media:</b>ndica en qué condiciones (como el tipo de dispositivo o la resolución de pantalla) debe aplicarse el recurso vinculado, comúnmente utilizado con hojas de estilo CSS.</li>
+            </ol>
+            <figure>
+                <figcaption>Algunos ejemplos son:</figcaption>
+                <img src="../imagenes/ejemplo_link1.PNG" alt="No se pudo visualizar">
+                <br>
+                <img src="../imagenes/ejemplo_link2.PNG" alt="No se pudo visualizar">
+                <br>
+                <img src="../imagenes/ejemplo_link3.PNG" alt="No se pudo visualizar">
+                <br>
+                <img src="../imagenes/ejemplo_link4.PNG" alt="No se pudo visualizar">
+            </figure>
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Organización y mantenimiento:</b> Permite separar la presentación (CSS, fuentes) y otros recursos del contenido HTML, lo que hace que el código sea más limpio y fácil de mantener.</li>
+                <li><b>Optimización del rendimiento:</b> Al utilizar el atributo preload, puedes anticipar la carga de recursos, mejorando la velocidad de la página y la experiencia del usuario.</li>
+                <li><b>Soporte para favicon:</b> A través de &lt;link&gt;, puedes definir el ícono que aparecerá en la pestaña del navegador, mejorando la identidad visual del sitio.</li>
+                <li><b>Diseño responsivo:</b> Al usar el atributo media, puedes aplicar diferentes hojas de estilo según el tipo de dispositivo o resolución, lo que facilita la creación de sitios web adaptables a distintos tamaños de pantalla.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>No interactúa directamente con el contenido:</b> A diferencia de otras etiquetas como &lt;a&gt; o &lt;img&gt;, &lt;link&gt; no tiene efectos visibles en la página ni en la interacción del usuario. Su función es más orientada a la optimización y la carga de recursos.</li>
+                <li><b>Uso exclusivo en el &lt;head&gt;:</b> Aunque es posible colocar la etiqueta &lt;link&gt; en otros lugares de la página, su uso dentro del %lt;head&gt; es más común y se espera en la mayoría de los casos. Si se coloca en otros lugares, puede no ser interpretada correctamente por todos los navegadores.</li>
+            </ul>
+            <h3>¿Cuándo y por qué usar la etiqueta&lt;link&gt;?</h3>
+            <p>La etiqueta &lt;link&gt; debe ser utilizada siempre que necesites vincular recursos externos que no son parte del contenido visible de la página. Esto incluye hojas de estilo (CSS), íconos, fuentes web y la pre-carga de recursos. Al separar estos elementos del contenido HTML, no solo mejoras la organización del código, sino que también optimizas el rendimiento, especialmente si se utiliza preload o media. Es una herramienta indispensable para asegurar que la página cargue correctamente en diferentes dispositivos y se mantenga rápida y eficiente, lo que resulta crucial tanto para la experiencia del usuario como para el SEO.</p>
+        </article>
+    </section>
+
+    <section id="grupo">
+        <h2>Etiquetas de Agrupacion</h2>
+        <p>En el desarrollo web, la agrupación es una técnica fundamental para organizar y estructurar el contenido de una página. En HTML, existen diferentes elementos y etiquetas que nos permiten agrupar y organizar de manera eficiente los diferentes elementos de nuestro sitio web.</p>
+        <article>
+            <h3 id="p">&lt;p&gt;</h3>
+            <p>La etiqueta &lt;p&gt; en HTML se utiliza para definir un párrafo de texto en un documento web. Es una de las etiquetas más comunes y fundamentales en HTML, ya que permite estructurar el contenido textual de manera organizada y legible. Los navegadores suelen aplicar un margen superior e inferior por defecto a los párrafos, lo que los distingue visualmente como bloques de texto separados. <br>
+                Dentro de un párrafo, puedes incluir texto, enlaces, imágenes u otras etiquetas en línea (como &lt;span&gt; o &lt;strong&gt;). Ademas sirve para dividir el contenido textual en unidades coherentes, facilitando su lectura y comprensión.</p>
+                <img src="../imagenes/p.png" alt="No se pudo visualizar">
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Estructura y legibilidad:</b> Ayuda a dividir grandes bloques de texto en fragmentos manejables, lo que mejora la legibilidad y organización del contenido.</li>
+                <li><b>Compatibilidad universal:</b> Es compatible con todos los navegadores web, lo que garantiza que el contenido sea visible en cualquier dispositivo.</li>
+                <li><b>Flexibilidad en el diseño:</b>Puedes aplicar estilos CSS para personalizar la apariencia de los párrafos, incluyendo márgenes, colores de texto y alineaciones.</li>
+                <li><b>Facilita el SEO y la accesibilidad:</b>Usar párrafos correctamente estructurados mejora la accesibilidad para lectores de pantalla y ayuda a los motores de búsqueda a analizar el contenido del sitio.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Limitaciones para contenido complejo:Aunque es útil para bloques de texto simples, no es adecuada para contenido que requiere una estructura más avanzada, como tablas o listas.</b></li>
+                <li><b>Dependencia del diseño CSS:</b>Los estilos predeterminados aplicados por los navegadores pueden no ajustarse al diseño deseado, lo que requiere personalización adicional mediante CSS.</li>
+                <li><b>Problemas de anidamiento incorrecto</b>Anidar incorrectamente elementos de bloque dentro de un párrafo puede causar errores de renderizado.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;p&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;p&gt; para estructurar texto en un sitio web de manera clara y lógica. Es ideal para contenido que se organiza en oraciones y párrafos, como artículos, descripciones o contenido informativo. Usarla garantiza que el texto sea fácilmente legible tanto para los usuarios como para las herramientas de análisis, como los motores de búsqueda y los lectores de pantalla. Además, permite personalizar su apariencia mediante CSS, adaptando el diseño de tu página a las necesidades específicas de tu proyecto.</p>    
+
+            <h3 id="hr">&lt;hr&gt;</h3>
+            <p>La etiqueta &lt;hr&gt; en HTML se utiliza para insertar una línea horizontal que separa el contenido dentro de una página web. Tradicionalmente, la etiqueta &lt;hr&gt; se usaba para representar un cambio temático o una división visual entre secciones de contenido. Aunque su propósito principal sigue siendo el mismo, su significado semántico puede variar según el contexto.
+             Una caracteristica que posee la etiqueta &lt;hr&gt; es que es una etiqueta vacía, lo que significa que no necesita un cierre como otras etiquetas. Su forma básica es: <br>
+            &lt;hr&gt;, y  Aunque su apariencia predeterminada es simple, puedes modificar su grosor, color, estilo y otros atributos usando CSS.</p>
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Separación clara del contenido:</b>Ayuda a dividir visualmente diferentes secciones de una página, mejorando la organización y legibilidad.</li>
+                <li><b>Simplicidad</b>Es fácil de implementar y no requiere contenido o atributos obligatorios.</li>
+                <li><b>Semántica enriquecida:</b> En ciertos contextos, indica una pausa o cambio en el tema, lo que mejora la estructura lógica de la página.</li>
+                <li><b>Personalización flexible:</b>Puedes usar CSS para personalizar completamente su apariencia y adaptarla al diseño de tu sitio web.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Dependencia de estilos predeterminados:</b>Sin CSS, la apariencia de la línea puede no ajustarse al diseño deseado, ya que varía según el navegador.</li>
+                <li><b>Uso excesivo: </b>Si se utiliza de manera excesiva o sin propósito claro, puede dar una apariencia desordenada al sitio.</li>
+                <li><b>Semántica limitada:</b>Aunque tiene un propósito semántico, no proporciona tanta información como otros elementos más específicos, como encabezados o etiquetas &lt;section&gt;.</li>
+            </ul>
+             
+            <h3>¿Por qué deberías usar la etiqueta &lt;hr&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;hr&gt; cuando necesites una división clara y simple entre secciones de contenido relacionadas, como entre bloques de texto, temáticas o elementos visuales. Es útil en sitios web con mucho contenido textual para mejorar la legibilidad y la organización. También puede servir como un elemento decorativo o funcional en diseños minimalistas. Sin embargo, es importante usarla con moderación y combinarla con estilos personalizados para que encaje en la estética general del sitio. <br></p>
+
+            <h3 id="ul">&lt;ul&gt;</h3>
+            <p>La etiqueta &lt;ul&gt; en HTML se utiliza para definir una lista desordenada. Es decir, un conjunto de elementos relacionados que no tienen un orden jerárquico o secuencial específico. Los elementos de la lista se representan comúnmente con viñetas (puntos) por defecto, aunque esto puede personalizarse con CSS.</p>
+          
+            <h3>Estructura de ul:</h3>
+            <p>La etiqueta &lt;ul&gt; se utiliza junto con &lt;li&gt; (elemento de lista) para agrupar los elementos de la lista:</p>
+           
+            <figure>
+                <img src="../imagenes/ejemplo_etiqueta_ul.PNG" alt="No se pudo visualizar">
+                <figcaption>El navegador muestra una lista desordenada con viñetas para cada elemento.</figcaption>
+            </figure>
+
+            <p>En este ejemplo crea una lista anidada: la categoría "Frutas" contiene otra lista desordenada con elementos específicos.</p>
+            <img src="../imagenes/ejemplo_etiqueta_ul1.PNG" alt="No se pudo visualizar">
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Organización del contenido:</b>Ayuda a estructurar elementos relacionados de manera clara y visualmente atractiva, mejorando la legibilidad.</li> 
+                <li><b>Flexibilidad:</b>Puede adaptarse a diversos propósitos, desde menús de navegación hasta listas de características o tareas. </li> 
+                <li><b>Compatibilidad con navegadores: </b>Es soportada por todos los navegadores modernos y es fácil de estilizar con CSS.</li> 
+                <li><b>Accesibilidad: </b>Las listas desordenadas son interpretadas correctamente por lectores de pantalla, lo que mejora la experiencia de usuarios con discapacidad visual.
+                </li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Estilo limitado por defecto:</b>La apariencia predeterminada (viñetas simples) puede ser básica y requerir estilos CSS para adaptarse a un diseño más complejo.</li>
+                <li><b>Propósito restringido:</b> No es adecuada para listas que requieren orden o secuencia específica, como pasos o clasificaciones; para eso es mejor usar &lt;ol&gt;.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;ul&gt;?</h3>
+            <p>La etiqueta &lt;ul&gt; es ideal cuando necesitas presentar elementos relacionados sin un orden específico. Por ejemplo, listas de características de productos, menús de navegación, categorías de un blog o puntos destacados en un informe. Es una herramienta fundamental para estructurar contenido que necesita ser claro y visualmente diferenciado, y su compatibilidad con CSS permite adaptarla a cualquier diseño o funcionalidad deseada.</p>
+
+            <h3 id="div">&lt;div&gt;</h3>
+            <p>a etiqueta &lt;div&gt; en HTML es un elemento contenedor genérico que se utiliza para agrupar otros elementos y estructurar el contenido de una página web. Su propósito principal es servir como un contenedor flexible que permite aplicar estilos CSS, organizar el diseño de una página o interactuar con JavaScript. A diferencia de etiquetas más específicas como &lt;header&gt; o &lt;section&gt;, &lt;div&gt; no tiene un significado semántico inherente.</p>
+            <figure>
+                <figcaption>La sintaxis de un contenedor &lt;div&gt; es simple y puede contener cualquier combinación de elementos HTML:</figcaption>
+                <img src="../imagenes/ejemplo_etiqueta_div.PNG" alt="No se pudo visualizar">
+            </figure>
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Flexibilidad:</b>Puede contener cualquier tipo de contenido, desde texto hasta imágenes, formularios o incluso otros elementos &lt;div&gt;.</li>
+                <li><b>Facilita el diseño con CSS: </b> Permite aplicar estilos específicos a secciones de la página mediante clases o identificadores (id).</li>
+                <li><b>Interacción con JavaScript:</b>Es ideal para manipular elementos del DOM (Document Object Model) mediante scripts, como mostrar, ocultar o modificar contenido dinámicamente.</li>
+                <li><b>Estructuración de páginas complejas:</b>Es útil para organizar y distribuir contenido en una página con diseños avanzados como cuadrículas o sistemas de columnas.</li>
+
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Falta de semántica: </b> &lt;div&gt; no tiene un significado específico, lo que puede dificultar la accesibilidad y el SEO si se abusa de él en lugar de usar etiquetas semánticas como &lt;header&gt;, &lt;main&gt; o &lt;section&gt;.</li>
+                <li><b>Riesgo de sobreuso: </b>Usar demasiados &lt;div&gt; innecesarios, también conocido como "divitis", puede hacer que el código sea más complicado de entender y mantener.</li>
+                <li><b>No aporta contexto: </b> Los lectores de pantalla no reciben información sobre el propósito de un &lt;div&gt;, lo que puede dificultar la navegación para personas con discapacidades.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;div&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;div&gt; cuando necesites un contenedor genérico para agrupar elementos, especialmente si planeas aplicar estilos o scripts personalizados. Es útil en estructuras de diseño complejo, como dividir una página en columnas o secciones que no requieren un propósito semántico específico. Sin embargo, siempre que sea posible, opta por etiquetas semánticas para mejorar la accesibilidad y el SEO de tu página. &lt;div&gt; sigue siendo indispensable en proyectos dinámicos o de diseño avanzado, pero debe utilizarse de manera consciente y estratégica.</p>
+
+            <h3 id="figure">&lt;figure&gt;</h3>
+            <p>La etiqueta &lt;figure&gt; en HTML se utiliza para contener contenido independiente relacionado con el documento principal, como imágenes, gráficos, tablas o fragmentos de código, que suelen ir acompañados de una descripción o título en la etiqueta &lt;figcaption&gt;. Es un elemento semántico que mejora la organización del contenido y su accesibilidad, proporcionando un marco lógico para ilustraciones u otros elementos visuales o informativos. <br>
+            Una de sus características es que Puede contener no solo imágenes, sino también videos, gráficos, tablas u otros contenidos visuales o informativos. Un ejemplo seria:</p>
+            <img src="../imagenes/ejemplo_etiqueta_figure.PNG" alt="No se pudo visualizar">
+
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Mejora de la semántica:</b>Proporciona un significado claro de que el contenido es ilustrativo o relacionado, pero independiente, mejorando el SEO y la accesibilidad.</li>
+                <li><b>Organización:</b> Agrupa imágenes, gráficos o contenido visual con descripciones, facilitando una presentación profesional y clara.</li>
+                <li><b>Interoperabilidad:</b>Su uso correcto permite a lectores de pantalla interpretar y relacionar el contenido de manera efectiva, beneficiando a usuarios con discapacidades visuales.</li>
+                <li><b>Flexibilidad para múltiples formatos:</b>Puede contener diversos tipos de medios, como videos, diagramas o fragmentos de código.</li>
+            </ul>
+
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Requiere compatibilidad con &lt;figcaption&gt;:</b>Aunque &lt;figcaption&gt; es opcional, su ausencia puede limitar el contexto para ciertos elementos dentro de &lt;figure&gt;.</li>
+                <li><b>No es ideal para contenido decorativo:</b>Si el contenido no tiene relevancia semántica (como imágenes puramente decorativas), puede ser excesivo usar &lt;figure&gt;.</li>
+                <li><b>Uso inadecuado:</b> Puede ser malinterpretado o utilizado innecesariamente en lugar de otras etiquetas más específicas, como &lt;section&gt; o &lt;aside&gt;. </li>
+            </ul>
+
+            <h3>¿Por qué deberías usar la etiqueta &lt;figure&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;figure&gt; cuando necesites incluir elementos visuales o informativos que tengan relevancia contextual en el contenido, pero que no necesariamente sean parte del flujo principal. Es ideal para ilustraciones, gráficos, tablas o ejemplos con descripciones claras. Su semántica no solo mejora la organización y la experiencia del usuario, sino también la accesibilidad y la optimización para motores de búsqueda, haciendo que sea una opción profesional y funcional en cualquier proyecto web.</p>
+            
+            <h3 id="figcaption">&lt;figcaption&gt;</h3>
+            <p>La etiqueta &lt;figcaption&gt; en HTML se utiliza para proporcionar una descripción o título a un contenido agrupado dentro de un &lt;figure&gt;. Esta etiqueta es opcional, pero su uso es altamente recomendable cuando se necesita explicar o contextualizar el contenido, como imágenes, gráficos, videos, tablas o cualquier medio visual. Al estar diseñada para acompañar a &lt;figure&gt;, ayuda a mejorar la semántica y accesibilidad del documento. <br>
+              La relación directa con &lt;figure&gt; Su propósito es proporcionar un título o descripción al contenido del &lt;figure&gt;.</p>
+            
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Mejora de la semántica: </b>Al agregar un título o descripción a contenido visual, hace que este sea más significativo tanto para los usuarios como para los motores de búsqueda.</li>
+                <li><b>Accesibilidad: </b>Facilita la interpretación del contenido por lectores de pantalla, beneficiando a usuarios con discapacidades visuales.</li>
+                <li><b>Mayor claridad:</b> Aporta contexto adicional a imágenes, gráficos o videos, ayudando a los usuarios a entender mejor el propósito del contenido.</li>
+            </ul>
+
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Estilo básico predeterminado:</b>Sin personalización con CSS, su apariencia puede ser muy simple y no siempre adecuada para diseños modernos.</li>
+                <li><b>Dependencia del contexto:</b>Si el &lt;figure&gt; no es necesario o el contenido ya está explicado en el texto principal, &lt;figcaption&gt; puede ser redundante.</li>
+            </ul>
+        </article>
+
+    </section>
+    <section id="texto">
+        <h2>Etiquetas de Textuales</h2>
+        <p></p>
+        <article>
+            <h3 id="a">&lt;a&gt;</h3>
+            <p>La etiqueta &lt;a&gt; en HTML, conocida como "ancla", se utiliza para crear enlaces (hipervínculos) que permiten a los usuarios navegar entre diferentes páginas, secciones de una misma página, descargar archivos o interactuar con otros recursos en la web. Es una de las etiquetas más fundamentales en HTML para conectar contenidos y hacer la web navegable.
+                "href" es el atributo más importante de &lt;a&gt;, define el destino del enlace. Puede ser una URL completa, un enlace interno, un archivo o un fragmento dentro de la misma página. <br> 
+                El texto entre las etiquetas &lt;a&gt; y &lt;/a&gt; es el texto visible del enlace.</p>
+
+            <figure>
+                <img src="../imagenes/ejemplo_etiqueta_a.PNG" alt="No se pudo visualizar">
+                <figcaption>Esto es un ejemplo que redirecciona a wikipedia</figcaption>
+            </figure>
+            <h3>Atributos mas comunes d ela etiqueta &lt;a&gt;:</h3>
+            <ul>
+                <li>href: Define el destino del enlace. Es el atributo más importante.</li>
+                <li>target: Especifica cómo abrir el enlace
+                    <ul>
+                        <li>_self: En la misma pestaña (valor predeterminado).</li>
+                        <li>_blank: En una nueva pestaña o ventana.</li>
+                        <li>_parent: En el marco principal (si se usa con iframes).</li>
+                        <li>_top: En la ventana completa, eliminando cualquier iframe.</li>
+                    </ul>
+                </li>
+                <li>download: Indica que el enlace descargará un archivo en lugar de abrirlo.</li>
+                <li>rel: Define la relación entre el enlace y la página actual (por ejemplo, nofollow, noopener, noreferrer).</li>
+                <li>title: Proporciona información adicional al pasar el cursor sobre el enlace.</li>
+            </ul>
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b> Esencial para la navegación web: </b>Permite conectar páginas, recursos y secciones de manera efectiva.</li>
+                <li><b>Versatilidad: </b>Soporta enlaces internos, externos, descargas, y más.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Dependencia de href:</b>el atributo href no está bien definido, el enlace no funcionará o generará confusión.</li>
+                <li><b>Malas prácticas en SEO:</b>Enlaces rotos o uso excesivo de nofollow pueden afectar negativamente al posicionamiento en motores de búsqueda.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;a&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;a&gt; para optimizar tu sitio en términos de SEO y accesibilidad ; Los enlaces bien diseñados mejoran el posicionamiento y hacen que el contenido sea más comprensible para los motores de búsqueda y los usuarios.
+
+            <h3 id="span">&lt;span&gt;</h3>
+            <p>La etiqueta &lt;span&gt; en HTML es un elemento en línea (inline) que se utiliza principalmente para aplicar estilos, identificar fragmentos específicos de texto o contenido, y asociar estos fragmentos con scripts o manipulaciones de JavaScript. Es una etiqueta genérica, es decir, no tiene un significado semántico propio, pero su flexibilidad la convierte en una herramienta esencial para personalizar y controlar el contenido en línea.</p>
+            <figure>
+                <img src="../imagenes/ejemplo_etiqueta_span.PNG" alt="No se pudo visualizar">
+                <figcaption>Por sí sola, la etiqueta &lt;span&gt; no tiene ningún efecto visual o funcional. Su principal utilidad surge cuando se combina con atributos como class, id, o estilos CSS, y con scripts JavaScript.</figcaption>
+            </figure>
+           
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Flexibilidad:</b>Es ideal para destacar o trabajar con fragmentos pequeños de contenido sin afectar el diseño general.</li>
+                <li><b>Soporte para JavaScript:</b>Facilita la manipulación dinámica de partes del contenido mediante scripts.</li>
+                <li><b>Estilización selectiva:</b>Permite aplicar estilos o interacciones específicas solo a partes seleccionadas del contenido.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Uso incorrecto:</b>Muchas veces se usa en exceso o en situaciones donde otras etiquetas semánticas (como &lt;em&gt;, &lt;strong&gt;, o &lt;mark&gt;) serían más apropiadas.</li>
+                <li><b>Requiere estilos adicionales:</b>Por defecto, &lt;span&gt; no tiene ningún impacto visual o funcional, por lo que siempre necesita CSS o JavaScript para ser útil.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;span&gt;?</h3>
+            <p>Deberías usar &lt;span&gt; cuando necesitas personalizar o manipular fragmentos específicos de texto o contenido en línea y no haya una alternativa semántica mejor. Es ideal para aplicar estilos personalizados, identificar fragmentos únicos para JavaScript, y mejorar la accesibilidad con atributos como aria-label. Sin embargo, úsalo con moderación y siempre considera etiquetas semánticas cuando sean más apropiadas para el contenido que estás representando.</p>
+
+            <h3 id="sub">&lt;sub&gt;</h3>
+            <p>La etiqueta &lt;sub&gt; en HTML se utiliza para definir texto que debe mostrarse como subíndice. El subíndice es un texto reducido que aparece ligeramente por debajo de la línea base del texto normal. Es muy común en contextos científicos, matemáticos y químicos, donde se utilizan fórmulas o índices.</p>
+            <figure>
+                <img src="../imagenes/ejemplo_etiqueta_sub.PNG" alt="No se pudo visualizar">
+                <figcaption>En este caso, el "2" se mostrará como subíndice, indicando la cantidad de átomos de hidrógeno en la molécula de agua.</figcaption>
+            </figure>
+            
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Facilidad de uso:</b>Proporciona una forma sencilla de implementar subíndices sin necesidad de estilos CSS adicionales.</li>
+                <li><b>Semántica y accesibilidad:</b>Los navegadores y lectores de pantalla reconocen que el contenido dentro de &lt;sub&gt; es un subíndice, lo que mejora la accesibilidad del contenido técnico o académico.</li>
+                <li><b>Compatibilidad universal:</b>Es compatible con todos los navegadores y dispositivos modernos, garantizando consistencia en su presentación.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Uso limitado:</b>Su aplicación está restringida a contextos específicos (notación científica, técnica, etc.).</li>
+                <li><b>No es interactiva:</b>No tiene funcionalidad adicional más allá de la presentación visual.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;sub&gt;?</h3>
+            <p>Debes usar &lt;sub&gt; siempre que necesites representar texto como subíndice en contextos científicos, matemáticos o técnicos, o cuando quieras mejorar la accesibilidad y semántica del contenido. Esto garantiza que el texto sea interpretado correctamente tanto por los usuarios como por las herramientas automatizadas. Sin embargo, evita usar &lt;sub&gt; si no es necesario o si el propósito es simplemente estilizar el texto, ya que en esos casos CSS sería más apropiado.</p>
+           
+            <h3 id="sup">&lt;sup&gt;</h3>
+            <p>La etiqueta &lt;sup&gt; en HTML se utiliza para definir texto que debe mostrarse como superíndice. Un superíndice es un texto más pequeño que se posiciona ligeramente por encima de la línea base del texto normal. Es ampliamente utilizado en contextos matemáticos, científicos y tipográficos, como en potencias, unidades, referencias o marcas registradas.</p>
+            <img src="../imagenes/ejemplo_etiqueta_sup.PNG" alt="No se pudo visualizar">
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Semántica enriquecida:</b>Los navegadores y herramientas de accesibilidad reconocen que el contenido dentro de &lt;sup&gt; tiene la función específica de ser un superíndice.</li>
+                <li><b>Compatibilidad universal:</b>Es compatible con todos los navegadores modernos y garantiza que el contenido se muestre de manera uniforme.</li>
+                <li><b>Apto para diversos contextos:</b>Facilita la representación de potencias, referencias, unidades y más.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Uso limitado:</b>Su aplicación está restringida a contextos específicos (matemáticos, técnicos, tipográficos).</li>
+                <li><b>Dependencia del diseño predeterminado:</b>Dependencia del diseño predeterminado: Aunque proporciona una visualización básica de superíndices, para personalización avanzada es necesario utilizar CSS.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;sup&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;sup&gt; para representar superíndices en contextos semánticos claros, como potencias matemáticas (e.g.,E=mc2), referencias académicas, marcas registradas (™ o ®), y notaciones científicas (e.g., H⁺ o m³). Mejora la accesibilidad y garantiza que el contenido sea interpretado correctamente por navegadores y lectores de pantalla. Evita usarlo solo con fines estéticos, para lo cual es mejor emplear CSS.</p>
+           
+            <h3 id="cite">&lt;cite&gt;</h3>
+            <p>La etiqueta &lt;cite&gt; en HTML se utiliza para identificar el título de una obra creativa, como un libro, artículo, película, obra de arte, documento académico, entre otros. También se puede emplear para referenciar el autor o fuente de una cita textual o idea. Los navegadores suelen mostrar el contenido de &lt;cite&gt; en cursiva, aunque este estilo puede personalizarse con CSS.</p>
+            <img src="../imagenes/ejemplo_etiqueta_cite.PNG" alt="No se pudo visualizar">
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Semántica clara:</b>Define títulos de obras o fuentes de citas de manera específica, enriqueciendo la comprensión del contenido.</li>
+                <li><b>Accesibilidad:</b>Mejora la interpretación por parte de lectores de pantalla y motores de búsqueda.</li>
+                <li><b>Estilización automática:</b>Los navegadores aplican estilos predeterminados, como cursiva, para destacar el contenido de forma coherente.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Mal uso común:</b>A menudo se confunde con etiquetas como &lt;blockquote&gt; o &lt;q&gt;, que tienen propósitos diferentes.</li>
+                <li><b>Interpretación limitada:</b>No tiene funcionalidad más allá de su significado semántico y visualización básica.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;cite&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;cite&gt; cuando quieras referenciar el título de una obra creativa, como un libro, película, canción, obra de arte, o documento académico, o para atribuir una fuente en una cita textual. Por ejemplo, al mencionar el título de un libro como Cien años de soledad o al citar una fuente como La teoría de la relatividad en un contexto académico, &lt;cite&gt; proporciona semántica clara y accesibilidad al contenido, permitiendo que lectores de pantalla y motores de búsqueda identifiquen correctamente su propósito. Es especialmente útil en textos literarios, científicos o periodísticos para destacar y validar referencias importantes.</p>
+           
+        </article>
+    </section>
+    <section id="semanticas">
+        <h2>Etiquetas Semanticas</h2>
+        <article>
+            <h3 id="nav">&lt;nav&gt;</h3>
+            <p>La etiqueta &lt;nav&gt; en HTML se utiliza para definir una sección de navegación dentro de un documento web. Su propósito es agrupar los enlaces de navegación principales, como menús, enlaces a otras páginas del sitio o secciones clave. Usar &lt;nav&gt; mejora la accesibilidad y la estructura del sitio, ya que los motores de búsqueda y los lectores de pantalla pueden identificar fácilmente las áreas de navegación.</p>
+            <img src="../imagenes/ejemplo_etiqueta_nav.PNG" alt="No se pudo visualizar">
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Mejora la estructura del documento:Ayuda a agrupar los elementos de navegación y proporciona una forma clara de organizarlos.</b></li>
+                <li><b>Aumenta la accesibilidad:Los lectores de pantalla y otras tecnologías asistivas pueden identificar fácilmente las secciones de navegación, mejorando la experiencia de los usuarios con discapacidades.</b></li>
+                <li><b>Optimización para motores de búsqueda (SEO): Al usar &lt;nav&gt;, se señala a los motores de búsqueda las secciones de navegación importantes, ayudando a mejorar la indexación del sitio.</b></li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Exceso de etiquetas &lt;nav&gt;:</b>Usarla en exceso en una página puede llevar a una sobrecarga semántica, ya que no se debe utilizar para cada conjunto de enlaces, sino solo para los enlaces principales de navegación.</li>
+                <li><b>Limitado a la navegación:</b>No es adecuada para cualquier tipo de enlace; debe limitarse a las áreas de navegación clave.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;nav&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;nav&gt; para agrupar los enlaces de navegación principales dentro de un sitio web, como menús de navegación o enlaces a secciones importantes. Esto ayuda a organizar la página de manera estructurada y mejora la accesibilidad tanto para usuarios con discapacidades como para los motores de búsqueda. También es útil cuando los enlaces en cuestión representan la navegación principal de la página o el sitio, como enlaces hacia páginas internas o secciones clave del contenido.</p>
+
+            <h3 id="section">&lt;section&gt;</h3>
+            <p>La etiqueta &lt;section&gt; en HTML se utiliza para definir secciones temáticas dentro de un documento. Estas secciones agrupan contenido relacionado que forma parte de una estructura mayor, como capítulos, grupos de artículos, o partes de un informe. Al usar &lt;section&gt;, se facilita la organización semántica del documento y se mejora la accesibilidad, ya que cada sección puede ser identificada y procesada de manera coherente por los motores de búsqueda, navegadores y tecnologías asistivas.</p>
+            <img src="../imagenes/ejemplo_etiqueta_section.PNG" alt="No se pudo visualizar">
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Mejora la organización semántica:</b>Facilita la comprensión y estructuración del contenido, tanto para los usuarios como para los motores de búsqueda.</li>
+                <li><b>Mejora la accesibilidad:</b>Al dividir el contenido en secciones claras, se ayuda a los usuarios con discapacidades visuales a navegar mejor por el contenido utilizando tecnologías asistivas.</li>
+                <li><b>Flexibilidad:</b>Se puede usar para agrupar cualquier tipo de contenido relacionado, como textos, imágenes, listas, formularios, entre otros.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Uso inapropiado:</b> Si se usa sin una estructura coherente, puede resultar en un exceso de etiquetas &lt;section&gt;, lo que podría hacer el documento innecesariamente complejo y difícil de mantener.</li>
+                <li><b>No para agrupaciones genéricas:</b>Si se necesita solo agrupar contenido visual o de estilo, es mejor usar otras etiquetas como &lt;div&gt;. &lt;section&gt; debe usarse solo para agrupaciones temáticas de contenido significativo.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;section&gt;?</h3>
+            <p>Deberías usar &lt;section&gt; cuando necesites dividir un documento en partes temáticamente relacionadas. Cada sección debe tener un propósito claro y agrupar contenido que esté estrechamente relacionado, como capítulos, subsecciones de un artículo o partes de una página web. Es especialmente útil en documentos largos, informes, artículos de blog o sitios web con contenido diverso y estructurado. También es útil para mejorar la accesibilidad y la organización en general, así como para optimizar el contenido para motores de búsqueda.</p>
+
+            <h3 id="article">&lt;article&gt;</h3>
+            <p>La etiqueta &lt;article&gt; en HTML se utiliza para representar contenido independiente y autónomo dentro de un documento, como un artículo en un blog, una noticia, una entrada de foro, un comentario o cualquier contenido que pueda ser distribuido de manera independiente. Esta etiqueta tiene como propósito semántico identificar partes del contenido que pueden tener sentido por sí solas, incluso fuera del contexto de la página web. El uso de &lt;article&gt; mejora la accesibilidad y el SEO, ya que los motores de búsqueda y los usuarios pueden comprender mejor la estructura y el propósito del contenido.</p>
+            <img src="../imagenes/ejemplo_etiqueta_article.PNG" alt="No se pudo visualizar">
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Semántica clara:</b>Facilita la comprensión de la estructura del contenido, ya que define bloques de información que pueden entenderse por sí solos.</li>
+                <li><b>Mejora la accesibilidad:</b>os lectores de pantalla y otras tecnologías asistivas pueden identificar el contenido como artículos independientes, lo que mejora la navegación.</li>
+                <li><b>Facilita el mantenimiento:</b> Al tener contenido autónomo, los desarrolladores pueden manejar y actualizar artículos de manera independiente.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Uso inapropiado:</b>No todos los contenidos deben estar dentro de un &lt;article&gt;. No se debe usar para contenido que no sea autónomo o independiente, como simples fragmentos de texto sin contexto claro.</li>
+                <li><b>Confusión con otras etiquetas:</b>Puede confundirse con etiquetas como &lt;section&gt;, &lt;div&gt;, o &lt;aside&gt;, que tienen propósitos ligeramente diferentes.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;article&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;article&gt; cuando el contenido que estás incluyendo puede existir independientemente, como un blog, una entrada de noticias, una publicación en un foro o un comentario. Es ideal para agrupar contenido que tiene un propósito autónomo y que puede ser entendido y distribuido por separado del resto de la página. Además, al mejorar la accesibilidad y SEO, es recomendable utilizar &lt;article&gt; para contenido que deba ser indexado y destacado por los motores de búsqueda.</p>
+
+            <h3 id="header">&lt;header&gt;</h3>
+            <p>La etiqueta &lt;header&gt; en HTML se utiliza para definir la cabecera o encabezado de una sección o de todo un documento. Generalmente, contiene información introductoria, como el título de la página, logotipos, enlaces de navegación y otros elementos relacionados con la identidad del sitio o la sección. Al usar &lt;header&gt;, se facilita la estructura semántica del documento, mejorando la accesibilidad y la navegación tanto para los usuarios como para los motores de búsqueda.</p>
+            <img src="../imagenes/ejemplo_etiqueta_header.PNG" alt="No se pudo visualizar">
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Optimización SEO:</b>Los motores de búsqueda pueden identificar los elementos clave dentro del encabezado, como el título y los enlaces, lo que ayuda a mejorar la indexación del sitio.</li>
+                <li><b>Facilidad de mantenimiento:</b>Al agrupar los elementos clave en una sección clara y coherente, facilita el mantenimiento y la actualización del contenido.</li>
+                <li><b>Semántica clara:</b>Ayuda a organizar el contenido de manera estructurada, separando el encabezado de la información del cuerpo principal.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Uso inapropiado:</b>No se debe usar &lt;header&gt; para agrupar contenido que no es parte del encabezado, como simplemente dividir secciones de contenido sin tener un propósito claro.</li>
+                <li><b>Confusión con otras etiquetas: </b>Puede confundirse con otras etiquetas estructurales, como &lt;section&gt; o &lt;div&gt;, si no se usa correctamente. Es importante recordar que &lt;header&gt; debe contener solo elementos introductorios o relevantes para el encabezado de la página o sección.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;header&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;header&gt; cuando necesites definir la cabecera de una página o una sección específica de tu sitio web. Esto incluye colocar títulos, logotipos, enlaces de navegación u otros elementos introductorios que son clave para la identidad y la navegación de la página. Usar &lt;header&gt; proporciona una estructura clara que mejora la accesibilidad y optimiza la organización del contenido.</p>
+            
+            <h3 id="main">&lt;main&gt;</h3>
+            <p>La etiqueta &lt;main&gt; en HTML se utiliza para definir el contenido principal de un documento, es decir, el contenido que es directamente relevante o central para el propósito del documento. El &lt;main&gt; debe contener el contenido único que no se repite en otras páginas del sitio, como artículos, publicaciones, o cualquier información que forme el núcleo de la página. La finalidad de esta etiqueta es separar el contenido principal de otros elementos de la página, como encabezados, barras de navegación, pie de página, y otras secciones accesorias.</p>
+            <figure>
+                <img src="../imagenes/ejemplo_etiqueta_main.PNG" alt="No se pudo visualizar">
+                <figcaption>Ejemplo de una Página principal de un blog</figcaption>
+            </figure>
+           
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Claridad en la estructura:</b>Al usar &lt;main&gt;, se establece claramente qué parte del documento es el contenido más importante, lo que facilita la organización del código.</li>
+                <li><b>Semántica clara: </b>Define explícitamente la sección principal del contenido, lo que mejora la comprensión de la estructura del documento.</li>
+                <li><b>Mejora la accesibilidad:</b>Los usuarios de tecnologías asistivas pueden saltar fácilmente al contenido principal de la página, lo que mejora la experiencia de navegación.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Uso inapropiado:</b>No debe usarse para contenido repetitivo o global, como cabeceras, pies de página, o menús de navegación. El &lt;main&gt; debe ser exclusivo para el contenido relevante de la página.</li>
+                <li><b>Compatibilidad con navegadores antiguos:</b>Aunque la mayoría de los navegadores modernos soportan &lt;main&gt;, algunas versiones antiguas pueden no reconocerla correctamente, lo que podría afectar la experiencia del usuario.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;main&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;main&gt; cuando quieras definir el contenido principal y único de una página. Esto incluye artículos, publicaciones, productos, o cualquier otra información que esté directamente relacionada con el propósito del documento. Es ideal para la estructura de una página, especialmente cuando quieres diferenciar claramente el contenido principal del resto de elementos estructurales como navegación, encabezados o pie de página.</p>
+            
+            <h3 id="footer">&lt;footer&gt;</h3>
+            <p>La etiqueta &lt;footer&gt; en HTML se utiliza para definir el pie de página de un documento o de una sección específica. Generalmente, el contenido dentro de un &lt;footer&gt; incluye información adicional que no es parte del cuerpo principal de la página, como derechos de autor, enlaces de contacto, enlaces a políticas de privacidad, o detalles sobre la empresa o el autor del contenido. Es una etiqueta semántica que ayuda a mejorar la accesibilidad y la organización del contenido dentro de un sitio web.</p>
+
+            <figure>
+                <img src="../imagenes/ejemplo_etiqueta_footer.PNG" alt="No se pudo visualizar">
+                <figcaption>Ejemplo de pie de página en una página de inicio</figcaption>
+            </figure>
+          
+            <h3>Ventajas</h3>
+            <ul>
+                <li><b>Claridad estructural:</b>La etiqueta &lt;footer&gt; ayuda a separar el contenido principal del documento de la información complementaria que se encuentra al final, lo que mejora la organización del código.</li>
+                <li><b>Accesibilidad:</b>Al utilizar &lt;footer&gt;, las tecnologías asistivas, como lectores de pantalla, pueden identificar fácilmente la parte final de la página y mejorar la experiencia de navegación.</li>
+                <li><b>Facilidad de mantenimiento:</b>Tener un &lt;footer&gt; bien definido permite una actualización más sencilla de los elementos de contacto, derechos de autor, y enlaces adicionales sin alterar el resto del contenido.</li>
+            </ul>
+            <h3>Desventajas</h3>
+            <ul>
+                <li><b>Uso inapropiado:</b>No se debe usar &lt;footer&gt; para contenido que no esté relacionado con información complementaria o final. No es adecuado para contenido que forme parte del cuerpo principal o que deba estar en otras secciones del sitio.</li>
+                <li><b>Limitación de diseño:</b>Aunque &lt;footer&gt; ayuda en la organización semántica, el diseño visual sigue dependiendo de los estilos CSS, por lo que la etiqueta por sí sola no afecta la apariencia de la página.</li>
+            </ul>
+            <h3>¿Por qué deberías usar la etiqueta &lt;footer&gt;?</h3>
+            <p>Deberías usar la etiqueta &lt;footer&gt; para agrupar la información adicional que aparece al final de la página o de una sección, como derechos de autor, enlaces de contacto, políticas, enlaces a redes sociales, o cualquier otro contenido complementario que no sea parte del cuerpo principal de la página. El uso de &lt;footer&gt; mejora la accesibilidad, la organización del contenido y la optimización SEO.</p> 
+        </article>
+    </section>
+   <footer>
+        <table>
+            <tr>
+                <th>Quienes somos:</th>
+                <th>cliente:</th>
+                <th>informaciones:</th>
+                <th>conctacto:</th>
+            </tr>
+
+            <tr>
+                <td>En JG-tecno, somos una mini empresa de tecnología dedicada a desarrollar soluciones innovadoras en software y tecnología. Nos especializamos en la creación de programas personalizados que transforman ideas en herramientas prácticas para personas y empresas.</td>
+                <td>atencion al cliente</td>
+                <td>politicas de privacidad</td>
+                <td>telefono:849-999-3344</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>   
+                <td>terminos y condiciones</td>
+                <td>JG-tecno@gmail.com</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>politicas de cookies</td>
+                <td><a href="https://x.com/?lang=es"><img src="../imagenes/x.png" id="social" alt="No se pudo visualizar">X</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.instagram.com/"><img src="../imagenes/instagram.jpg" id="social1" alt="No se pudo visualizar">Instagram</a></td>
+            </tr>
+    
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.facebook.com/"><img src="../imagenes/facebook.jfif"  id="social2"  alt="No se pudo visualizar">facebook</a></td>
+            </tr>
+        </table>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+#logo{
+    height: 100px;
+    width: 100px;
+}
+
+#lista1{
+    width: 400px;
+    margin: 15px;
+    line-height: 35px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+header{
+    width: 400px;
+    margin: 15px;
+    line-height: 35px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+}
+
+#regla_imagen{
+    width: 1000px;
+    height: 200px;
+}
+
+#social{
+    width: 25px;
+    height: 25px;
+}
+
+#social1{
+    width: 25px;
+    height: 25px;
+}
+
+#social2{
+    width: 25px;
+    height: 25px;
+}

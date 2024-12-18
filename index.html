@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="imagenes/logo.png" alt="No se pudo visualizar el contenido">
+        <a href="index.html">inicio</a>
+        <a href="html/etiquetas.html">Etiquetas</a>
+        <a href="html/atributos.html">Atributos</a>
+        <a href="html/css.html">CSS</a>
+        <a href="html/javascript.html">JavaScript</a>
+        <a href="html/contacto.html">Contacto</a>
+        <a href="html/acercade.html">Acerca</a>
+    </header>
+    <br>
+    <nav>
+        <h1>Contenidos</h1>
+     <ol id="lista1">
+       <li><a href="#html">¿Qué es HTML?</a></li>
+       <li><a href="#historia">Historia HTML</a></li>
+       <li><a href="#editor">Editores de HTML.</a></li>
+       <li><a href="#primer_documento">Tu primer documento HTML.</a></li>
+       <li><a href="#etiquetas">¿Que son Etiquetas en HTML?</a></li>
+       <li><a href="#atributo">¿Que son Atributos en HTML?</a></li>
+       <li><a href="#reglas">Reglas fundamentales en HTML</a></li>
+       <li><a href="#etiquetas_documento">Etiquetas para hacer un documento en HTML</a></li>
+     </ol>
+    </nav>
+    <br>
+    <section id="html">
+        <h2>HTML</h2>
+        <p>En este artículo, cubrimos los conceptos básicos de HTML. Para empezar, este artículo define elementos, atributos y todos los demás términos importantes que puedas haber escuchado. <br>
+            Aprenderás cómo se estructuran los elementos HTML, cómo se estructura una página HTML típica y otras características importantes del lenguaje básico. ¡En el camino, también tendrás la oportunidad de jugar con HTML!</p>
+        <img src="imagenes/que_es_html.jfif" alt="No se pudo visualizar">
+        <article>
+            <h3>¿Qué es HTML?</h3>
+            <p>HTML (HyperText Markup Language, por sus siglas en inglés) es un lenguaje de marcado que indica a los navegadores web cómo estructurar las páginas web que visita. Puede ser tan complicado o tan simple como el desarrollador web quiera que sea. HTML consiste en una serie de elementos, que utiliza para encerrar, envolver o marcar diferentes partes del contenido para que aparezca o actúe de cierta manera. Las etiquetas pueden convertir el contenido en un hipervínculo para conectarse a otra página, poner palabras en cursiva, etc. <br>
+                El lenguaje HTML nos da la oportunidad de tener una estructura lógica dentro de una web, tanto para máquinas como para seres humanos. Esto se logra por medio de una especie de árbol donde hay elemento que se ve como raíz y las etiquetas que se van insertando como si fueran las ramas. Lo mejor es que para crear un documento HTML sólo es necesario un editor de texto. El propio editor de notas es suficiente.Conocer HTML definitivamente es indispensable para el desarrollo de una página web. Por eso, para crear nuestro propio sitio, es necesario contar con un desarrollador web. <br>
+                Como cualquier lengua, el HTML cuenta con una gramática propia, por decirlo de algún modo. Hay una serie de normas que regulan las etiquetas que se deben utilizar y cómo emplearlas. También indican su significado y la relación que tienen entre ellas. En esta entrada te vamos a contar la historia y principales características del HTML. </p>    
+            <h3>características del HTML</h3>
+            <p>Una de las características de HTML es la forma en que se divide la información. Esto es por medio de dos grandes bloques: el elemento HTML o head y el cuerpo o contenido. <br>
+                En el elemento HTML se pueden incluir los siguientes casos: </p>
+            <ul>
+                <li>Meta datos. Esta puede ser información que le dé contexto a la página. Por ejemplo, nos sirve para indicar el idioma. </li>
+                <li>Referencia a ficheros. Aquí deben ir todos aquellos recursos que requiera nuestro sitio. Un ejemplo puede ser JavaScript y archivos CSS.</li>
+                <li>Scripts y estilos. En caso de que estos no sean incluidos en un fichero independiente se pueden incluir en la cabecera. </li>
+            </ul>
+            <p>Por su parte, en el cuerpo está todo el contenido de nuestra página. Es decir, desde el texto, imágenes, videos e incluso enlaces. Lo importante aquí es que todos estos elementos deben estar estructurados en secciones y marcado de forma correcta.   </p>
+            <h3>¿CUÁL ES LA FUNCIÓN DE HTML?</h3>
+            <p>El HTML es utilizado para desarrollos web y la creación de sitios. Este se compone de ciertas etiquetas como hipervínculos, saltos de página y etiquetas de imágenes. Es ideal para utilizarlo en diferentes CMS, este debe ser elegido dependiendo las necesidades de la página, por ejemplo: Wix vs WordPress.</p>
+        </article>
+    </section>
+   
+    <section id="historia">
+        <h2>Historia HTML</h2>
+        <p>La historia del HTML empieza en 1989 cuando el investigador Tim Berners-Lee lo inventa con el fin de compartir artículos científicos. La primera versión sólo contaba con 18 etiquetas para texto. Lo que lo hacía especial es que podía ligar varios documentos con el hipertexto. Todo esto se podía visualizar en un navegador llamado World Wide Web. <br>
+            Posteriormente surge el Internet Engineering Task Force. Esto se volvió tan relevante que surgió el World Wide Web Consortium (W3C) en 1993, un organismo que determinó las reglas para el HTML. En 1996 llegó la versión HTML 3.2 la cual ha sido una de las más completas y que ha marcado la historia del HTML hasta nuestros días. <br>
+            Es importante mencionar que en este tiempo se utilizaba un navegador de nombre NSCA Mosaic. Posteriormente se lanzó la primera versión de Netscape, quien en unos cuantos meses era usado por la mayoría de los usuarios en internet. <br>
+            En la evolución de internet jugaron un papel fundamental otros lenguajes de programación. La introducción de Java o JavaScript dio más forma a la segunda versión de HTML. Gracias a este lenguaje se podían implementar tablas, imágenes, tipografías e incluso colores. Posteriormente surgió el CSS (hojas de estilo en cascada) con el que se da estilo y forma a los textos. <br>
+            En la tercera versión de HTML se incluyen las etiquetas específicas para los navegadores web como Internet Explorer. Sin embargo, esta decisión sólo causó caos y problemas. <br>
+            Por esta razón se decidió hacer un cambio hacia un estándar único. En esta nueva versión se incluyeron etiquetas como (&lt;a&gt;, &lt;style&gt;, &lt;java&gt; y &lt;DIV&gt;). Es así que en la versión HTML 4.0 se agregan los botones y el iFrame para poder tener sitios dentro de otros sitios. En 2014 se desarrolló la quinta versión de HTML. Esta actualización llegó con un sin fin de audios, vídeos e inputs. </p>
+    </section>
+   
+    <section id="editor">
+        <h2>Editores de HTML.</h2>
+        <p>Todos cometemos errores y esto también aplica a la escritura de código. Tanto si eres un principiante como un experimentado en el tema, cometer un error en tu código puede causarte un verdadero dolor de cabeza.  Así como utilizamos todo tipo de herramientas para ayudarnos con tareas sencillas, como la corrección ortográfica al escribir, un editor HTML (Lenguaje de marcado de hipertexto, por sus siglas en inglés) te ayuda a enmendar los errores que se cometen al escribir código. <br> Pero antes debemos conocer que es un editor de HTML?</p>
+            <article>
+                <h3>¿Que es un editor de HTML?</h3>
+                <p>un editor de HTML se utiliza para escribir la base de un sitio web. Si bien cualquier editor de textos puede hacer este trabajo, no significa que tengas que hacerlo sin ningún tipo de ayuda. Las funciones adicionales, la comprobación de errores y un editor más intuitivo en general pueden facilitarte la vida significativamente a la hora de escribir código y optimizar tu proceso de desarrollo web. <br> 
+                    El texto que utiliza un editor de HTML también se puede traducir a otros lenguajes, como CSS, XML o JavaScript. Pero como sabemos, no todas las cosas están hechas de la misma manera. Algunos editores pueden ser más fáciles de usar, mientras que otros brindan mayor funcionalidad.</p>
+                <h3>¿Porque deberias usarlo?</h3>
+                <p>La respuesta corta es siempre. Un editor de HTML es invaluable tanto para principiantes como para desarrolladores más avanzados. Ya mencionamos algunas de las características básicas de los editores de HTML, como el resaltado de sintaxis, la inserción de elementos HTML comunes y el autocompletado. <br> 
+                    Todo esto asegura que tu código sea funcional y limpio con el menor esfuerzo, permitiendo que sea mucho más fácil hacer lo que mejor sabes hacer: crear código. </p>
+                <h3>Lista de mejores editores de HTML</h3>
+                <p>Como ya hemos visto qué es un editor HTML y cuándo usarlo, finalmente podemos poner las manos en los editores reales y elegir el mejor editor de HTML. <br>
+                    Cuando se trata de elegir una plataforma para nuestro trabajo donde pasaremos mucho tiempo, es importante elegir la que mejor se adapte a nosotros. Todos los editores tienes las mismas características básicas. Sin embargo, algunos ofrecen más representación visual que otros, más paquetes adicionales para instalar, entre otras cosas.</p>    
+                <figure>
+                    <figcaption>Atom</figcaption>
+                    <img src="imagenes/atom.png" alt="No se pudo visualizar">
+                </figure>
+                <p>Atom es un editor relativamente nuevo que salió en el 2014 y ha ganado un enorme impulso desde entonces. Se trata de uno de los mejores editores de HTML, gratuito y de código abierto, y fue desarrollado por el equipo de GitHub. Atom usa una licencia de software libre para su paquete y es mantenida por la comunidad de GitHub. <br>
+                    Su objetivo es ofrecer una experiencia premium en el editor, y a la vez mantenerlo completamente gratis; además de flexibilidad para personalizar el software en sí.</p>
+                <h4>características:</h4>
+                <ul>
+                    <li>Editor de texto de código abierto. El editor completo de Atom es un programa gratuito y de código abierto y está disponible en GitHub.</li>
+                    <li>Atom soporta el teletipo (Teletype). Esta es una característica importante si quieres colaborar con otros desarrolladores en tiempo real.</li>
+                    <li>Soporta múltiples paneles. Atom puede dividir la interfaz en muchas ventanas para que puedas comparar y escribir código lado a lado.</li>
+                    <li>Autocompletado inteligente. Atom te ayuda a escribir tu código de forma más rápida e inteligente con un autocompletado flexible.</li>
+                </ul>    
+                <figure>
+                    <figcaption>Visual Studio Code</figcaption>
+                    <img src="imagenes/visual-studio.png" alt="No se pudo visualizar">
+                </figure>
+                <p>Se destaca por su autocompletado y otras respuestas sintácticas inteligentes. Visual Studio Code es un programa de múltiples idiomas y plataformas. Su entorno de desarrollo trabaja mano a mano con HTML, Python y otros lenguajes de programación populares. <br>
+                    También es compatible con Microsoft Azure, lo que facilita la implementación y numerosas extensiones.</p>
+                <h4>características:</h4>
+                <ul>
+                    <li>El project manager hace que sea fácilmente accesible cambiar entre un proyecto y otro.</li>
+                    <li>Personalización y funciones. Instala extensiones para añadir idiomas, temas, depuradores y más.</li>
+                    <li>El project manager hace que sea fácilmente accesible cambiar entre un proyecto y otro.</li>
+                </ul>  
+                <figure>
+                    <figcaption>Notepad++</figcaption>
+                    <img src="imagenes/2.-Notepad-1024x554.jpg" alt="No se pudo visualizar">
+                </figure>
+                <p>Notepad++ es un editor que fue desarrollado para máquinas basadas en Windows. Los usuarios de Linux también pueden usarlo a través de Wine. Este editor se distribuye como software libre y su repositorio también está disponible en GitHub. Al igual que otros proyectos de la comunidad, admite plugins de terceros. <br>
+                    otepad++ se distingue por su simplicidad, además es súper liviano; incluso hay una versión móvil si la necesitas. Aquí hay algunos puntos destacados: </p>
+                <h4>características:</h4>
+                <ul>
+                    <li>La interfaz de Notepad++ es simple, liviana y rápida.</li>
+                    <li>Es compatible con el entorno de programación en varios idiomas, desde ActionScript, CSS hasta Visual Basic.</li>
+                    <li>100% compatible con Windows, aunque otros sistemas operativos no son compatibles (sin software adicional).</li>
+                </ul>  
+                <figure>
+                    <figcaption>Sublime Text</figcaption>
+                    <img src="imagenes/sublime.png"  alt="No se pudo visualizar">
+                </figure>
+                <p>Sublime es otro de los mejores editores HTML que podrás encontrar. Desarrollado por una empresa con sede en Sydney, este software se encuentra en la categoría de freemium. <br>
+                    Sublime ofrece muy buen soporte para garantizar que el programa se actualice constantemente. Los usuarios pueden agregar plugins creados por la comunidad o crear los suyos propios. Creemos que usar la versión gratuita de Sublime es más que suficiente. Sin embargo, si crees que necesitas más funciones, puede obtener la licencia más adelante.</p>
+                <h4>características:</h4>
+                <ul>
+                    <li>Sublime es compatible con la API de Python que le permite al plugin expandir su funcionalidad predeterminada.</li>
+                    <li>Edición simultánea. Puedes realizar cambios en muchas áreas seleccionadas al mismo tiempo.</li>
+                    <li>Sublime está disponible en Windows, OS X y Linux. Los desarrolladores solo necesitan tener una licencia para usar Sublime en todas las computadoras que tengan.</li>
+                </ul>  
+                <figure>
+                    <figcaption>Adobe Dreamweaver CC</figcaption>
+                    <img src="imagenes/adobe-dreamweaver.webp" alt="No se pudo visualizar">
+                </figure>
+                <p>Adobe Dreamweaver CC es una herramienta excelente, potente y versátil. Sirve tanto para el desarrollo de back-end como de front-end. Como software de código cerrado, Dreamweaver está diseñado para funcionar dentro del ecosistema de Adobe.<br>
+                    Dreamweaver es uno de los editores que admite tanto el método textual como el WYSIWYG. Por lo tanto, tu eliges si quieres programar con una presentación visual en vivo o seguir el camino clásico.</p>
+                <h4>características:</h4>
+                <ul>
+                    <li>Vista previa. De esta manera, los desarrolladores pueden programar mientras previsualizan el producto final.</li>
+                    <li>Confirmar el código y accesibilidad de la página. Esta característica puede facilitarle a los desarrolladores seguir las Pautas de accesibilidad de contenido web (WCAG).</li>
+                    <li>Acceso a bibliotecas creativas en la nube. Acceso premium a la abundante oferta de materiales en el ecosistema de Adobe. Desde colores, palabras, gráficos, capas, caracteres y mucho más.</li>
+                </ul>
+                <br>  
+                <p>Para concluir debemos saber que recibir ayuda para escribir código de forma más rápida y eficiente se está convirtiendo en una necesidad, ahora más que nunca. Tanto si empezaste a programar hace poco como si eres un experto, creemos que un editor de HTML puede convertirse en el mejor amigo de cualquiera. <br>
+                    También queremos mencionar que a menos que necesites soporte 24/7 y administres el código para una gran compañía, probablemente no tendrás problemas con un editor gratuito.</p>
+            </article> 
+    </section>
+
+    <section id="primer_documento">
+        <h2>Tu primer documento HTML</h2>
+        <p>En este apartado del tutorial se explica cuál es la estructura básica de un documento HTML a través de un ejemplo sencillo ("ejemplo.html") donde se visualizan dos párrafos. Por ejemplo, en Google Chrome, el resultado que se espera ver en pantalla será algo parecido a:</p>
+        <img src="imagenes/ejemplo_de_primer.png.png" alt="No se pudo visualizar.">
+        <article>
+            <h3>Pasos para crear un documento HTML:</h3>
+            <figure>
+                <figcaption>Abrir un editor de texto, como el Bloc de notas de Windows o TextEdit de macOS. También puedes usar editores de código como Visual Studio Code, Sublime Text o Atom.</figcaption>
+                <img src="imagenes/programas.jpg" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>En la primera línea del archivo, agregar el código especial <b>&lt;!DOCTYPE html&gt;</b> para declarar el tipo de documento como HTML.</figcaption>
+                <img src="imagenes/doctype.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Escribimos <b>&lt;html&gt;</b> para indicar que el documento está construido con HTML</figcaption>
+                <img src="imagenes/html.png" alt="No se pudo visualizar">
+            </figure>  
+            <figure>
+                <figcaption><b>&lt;head&gt;</b>  para contener información sobre el sitio (Pero no es visible al cliente).</figcaption>
+                <img src="imagenes/head.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption> <b>&lt;title&gt;</b> para incluir el título de la página </figcaption>
+                <img src="imagenes/TITLE.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption> <b>&lt;/head&gt;</b>  para cerrar la cabecera </figcaption>
+                <img src="imagenes/head_cerrado.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption> <b>&lt;body&gt;</b> para contener el cuerpo del documento </figcaption>
+                <img src="imagenes/body.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption> <b>&lt;/body&gt;</b>  para cerrar el cuerpo del documento</figcaption>
+                <img src="imagenes/body_cerrado.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption> <b>&lt;html&gt;</b>  para cerrar el documento</figcaption>
+                <img src="imagenes/html_cerrado.png" alt="No se pudo visualizar">
+            </figure>
+            <p>Finalmente, completaremos el código de este primer ejemplo añadiendo:</p>
+            <figure>
+                <figcaption> <b>&lt;p&gt;</b> para crear párrafos</figcaption>
+                <img src="imagenes/p.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Escribimos <b>"lang=en" </b> para especificar, mediante el atributo lang, el idioma del contenido del elemento "html".</figcaption>
+                <img src="imagenes/lang.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Escribimos <b>&lt;meta charset="utf-8"&gt;</b> dentro del elemento "head". Así, se indica la codificación de caracteres del documento, en esta ocasión UTF-8 (8-bit Unicode Transformation Format, Formato de Transformación Unicode de 8 bits). Obsérvese que, el elemento "meta" está vacío (no tiene contenido) y, en consecuencia, no necesita ser cerrado escribiendo &lt;/meta&gt;.</figcaption>
+                <img src="imagenes/meta_charset.png" alt="No se pudo visualizar">
+            </figure>
+            <figure>
+                <figcaption>Si has seguido los pasos debería de verse así:</figcaption>
+                <img src="imagenes/resultado.png" alt="No se pudo visualizar">
+            </figure>
+            <p>Para mas informaciones puedes ver estos videos:</p>
+            <iframe width="670" height="377" src="https://www.youtube.com/embed/LfG7zr4zoYw" title="COMO CREAR un ARCHIVO HTML en VISUAL STUDIO CODE ✅🖥️😃" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="670" height="377" src="https://www.youtube.com/embed/xc0pJlI0Org" title="Como crear un archivo HTML en Visual Studio Code" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </article>
+    </section>
+
+    <section id="etiquetas">
+        <H2>Las etiquetas</H2>
+        <p>Las etiquetas HTML son el alma de cualquier sitio web, los comandos secretos que transforman texto en experiencias digitales atractivas y bien estructuradas. Más allá de organizar contenido, estas etiquetas son clave para destacar en los motores de búsqueda y brindar una navegación fluida. <br>
+            En este artículo, revelamos el verdadero poder de las etiquetas HTML: e mostraremos cómo usarlas para mejorar la accesibilidad, impulsar el SEO y llevar la experiencia de tus usuarios a otro nivel. ¡Continúa leyendo!</p>
+
+        <article>
+            <h3>¿Que son las Etiquetas en HTML?</h3>
+            <p>Las etiquetas HTML son comandos que le dan instrucciones al navegador sobre cómo debe mostrar el contenido. <br>
+                Es por ello que no podemos entender ninguna página web sin las etiquetas HTML, ya que son las que le dan las órdenes al navegador sobre lo que tiene que hacer. <br>
+                A diferencia de un lenguaje de programación, HTML es un lenguaje de marcado; es decir, no genera funciones dinámicas, sino que define cómo se organiza la información en una página web. Aún así, con el uso de etiquetas HTML, los desarrolladores pueden crear una estructura clara y navegable, desde secciones principales hasta detalles como atributos específicos.</p>
+            <h3>Para qué sirven las etiquetas HTML</h3>
+            <p>Sirven para estructurar y organizar el contenido de una página web, permitiendo que los navegadores interpreten y presenten cada elemento correctamente para el usuario final. </p>
+            <p>Cada etiqueta HTML cumple una función específica, desde indicar títulos y párrafos hasta incorporar imágenes, enlaces y formularios. Estas etiquetas definen visualmente el contenido (por ejemplo, &lt;h1&gt; para títulos principales o &lt;p&gt; para párrafos) y también especifican funciones internas del documento, como metadatos y enlaces a recursos externos (&lt;meta&gt; , &lt;link&gt;).</p>
+            <h3>Ejemplos de uso de etiquetas HTML</h3>
+            <ul>
+                <li>Estructura básica de una página: organizan el contenido principal, los metadatos y el cuerpo visible del sitio.</li>
+                <li>Texto y formato: ayudan a estructurar los textos, como destacar palabras importantes en negritas o cursiva.</li>
+                <li>Interactividad: permiten añadir enlaces de navegación y recolectar datos de usuario en formularios</li>
+            </ul>
+            <h3>Cómo funcionan las etiquetas de HTML</h3>
+            <p>CGracias a las etiquetas de HTML, la construcción de una página puede ser entendida por máquinas y humanos, pues el código se basa en la descripción de los elementos que la componen. Lo mejor de todo es que son accesibles y sencillas de aprender, por lo que no necesitas ser un experto o experta en desarrollo web para insertar imágenes, videos, enlaces, documentos o dar un formato enriquecido a tus contenidos. <br>
+                La primera parte encerrada entre signos es la apertura de la etiqueta, y la segunda, que cuenta con una diagonal, indica el cierre de esa etiqueta. Esto sirve para indicarle al navegador la porción de texto que deberá modificarse por dicha indicación. Si se trata de una imagen, un salto de línea o video no es necesario señalar el cierre.</p>
+            <h3>Partes básicas de las etiquetas HTML</h3>
+            <p>Para comprender, a grandes rasgos, lo que son las etiquetas HTML te mostramos cuáles son sus partes básicas y para qué sirve cada una: </p>
+            <h4>elemento</h4>
+            <p>Es el nombre de la etiqueta, generalmente pareada (es decir: con apertura y cierre, como lo acabamos de mencionar), y aparece entre los signos de apertura. Por ejemplo: &lt;title&gt; Partes básicas de etiquetas HTML&lt;/title&gt;, que indica que esa frase es un título.</p>
+            <h4>contenido</h4>
+            <p>Es el texto que modifica las etiquetas, lo que aparece entre las etiquetas y atributos.</p>
+            <h4>Variable</h4>
+            <p>Es la característica del atributo de una etiqueta: color, tamaño, tipo de letra, y se escribe generalmente entrecomillado después del signo de igual. En el ejemplo de atributo, la variable es Arial.</p>
+        </article>
+    </section>
+
+    <section id="atributo">
+        <h2>Los atributos</h2>
+        <p>los atributos HTML, esos poderosos modificadores que proporcionan información adicional a los elementos web. Desde personalizar imágenes con el atributo «src» hasta dar estilo a listas y tablas con «class» y «style», te sumergirás en ejemplos cautivadores que desvelarán su potencial.</p>
+        <article>
+            <h3>¿Que son Atributos en HTML?</h3>
+            <p>Los atributos son elementos que permiten incorporar características adicionales al agregarlas a las etiquetas HTML para modificar su comportamiento o apariencia. Son como pequeños ajustes que le permiten personalizar cómo se muestra un elemento en la página web.Los atributos se colocan en las etiquetas HTML y generalmente constan de un nombre y un valor, separados por un signo igual (=).</p>
+            <p><b>Por ejemplo: </b></p>
+            <figure> 
+                <img src="imagenes/ejemplo_atributo.jpeg" alt="No se pudo visualizar la imagen">
+                <figcaption>Se puede observar el atributo "style" dando el color azul al párrafo</figcaption>  
+            </figure>
+           <h3>¿Para que sirven los atributos HTML?</h3>
+           <p>Como dijimos en el punto anterior, los atributos HTML sirven para modificar el comportamiento o la apariencia de los elementos HTML.</p>
+
+           <p>Aquí dejo algunas de las principales funciones o modificaciones que se pueden llevar a cabo con atributos:</p> 
+            <ol><li>Estilo y presentación: Los atributos como style permiten aplicar estilos CSS directamente a elementos HTML, controlando aspectos visuales como el color, tamaño de fuente, márgenes, etc. Como el ejemplo ilustrativo anterior.</li>
+            <li>Enlaces: Este atributo permite crear enlaces a otras páginas o recursos. Como por ejemplo, la etiqueta &lt;a&gt; utiliza el atributo href para especificar la ubicacion al que se dirigirá. </li>
+            <li>Imágenes: Insertar imágenes y definir sus propiedades. Atributos como src en elementos de imagen (&lt;img&gt;) indican la ubicación de la imagen.</li> 
+            <li>Atributos de accesibilidad: Algunos atributos como alt en elementos de imagen son esenciales para proporcionar texto alternativo. Es útil ya que los motores de búsqueda utilizan este atributo para identificar el contenido de la imagen o para mejorar la accesibilidad para usuarios con discapacidades visuales.</li>
+            </ol>
+
+        </article>
+    </section>
+    
+    <section id="reglas">
+        <h2>Reglas fundamentales en HTML</h2>
+        <img src="imagenes/etiquetas.jfif" alt="No se pudo visualizar" id="regla_imagen">
+        <p>Estas son algunas reglas fundamentales de Html:</p>
+        <ol>
+            <li>No poner acentos: Escribiremos todas las palabras sin acento, aunque los tengan. </li>
+            <li>Etiquetas: Las etiquetas HTML comienzan con un símbolo &lt; y terminan con un símbolo /&gt;. Las etiquetas no distinguen entre mayúsculas y minúsculas, pero se recomienda escribirlas en minúsculas para mayor coherencia y legibilidad.</li>
+            <li>Atributos: Los atributos se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre. Se recomienda entrecomillar todos los valores de atributo para hacer que el código sea más consistente y comprensible.</li>
+            <li>Sangría: Todos los documentos HTML deben utilizar dos espacios para la sangría</li>
+            <li>Espacios en blanco: No debe haber ningún espacio en blanco al final del documento.</li>
+            <li>Sintaxis: Se debe utilizar la sintaxis HTML5. </li>
+            <li>Estructura: La estructura básica de un documento HTML incluye las etiquetas &lt;html&gt;, &lt;head&gt; y &lt;body&gt;. &lt;html&gt; envuelve todo el contenido de la página, &lt;head&gt; contiene metadatos y enlaces a hojas de estilo o scripts, y &lt;body&gt; contiene el contenido visible de la página.</li>
+            <li>Escribir nombres de archivos: </li>
+        </ol>
+    </section>
+
+    <section id="etiquetas_documento">
+        <h2>Etiquetas para hacer un documento en HTML</h2>
+        <p>Estas son las etiquetas para hacer un documento en Html:</p>
+        <ol>
+            <li>&lt;body&gt;: Indica la parte del cuerpo del contenido de un documento HTML. Es una etiqueta esencial para cualquier documento ya que indica donde empieza el contenido visible del documento.</li>
+            <br>
+            <li>&lt; head&gt;: La parte superior del documento HTML, es donde podremos indicar los metadatos: título del documento, hojas de estilos, javaScript, CSS…</li>
+            <br>
+            <li>&lt;div&gt;: Un elemento que es usado mayoritariamente para agrupar otros elementos y actuar como plantilla de otros controles. La etiqueta &lt;div&gt; nos ayuda a estructurar el documento en secciones.</li>
+            <br>
+            <li>&lt;a&gt;: Es una etiqueta que nos ayuda a poder crear un enlace a una página web. El atributo principal de la etiqueta HTML es href, donde pondremos el enlace al que queremos conectar. Otro atributo muy usado es target, el cual nos sirve para indicar si el enlace se abrirá en una nueva ventana o en la misma.</li>
+            <br>
+            <li>&lt;strong&gt;: Si tienes mucho texto, es importante poder dar énfasis a una parte en concreto, con la etiqueta strong lo podemos hacer.</li>
+            <br>
+            <li>&lt;br&gt;: Con esta etiqueta HTML le podemos decir al navegador que viene un salto de línea. Nos sirve para hacer el texto más leíble.</li>
+            <br>
+            <li>&lt;(h1-h6)&gt;: Hay diferentes niveles de títulos, del 1 al 6. Las etiquetas &lt;H + número&GT; nos permiten indicar la importancia del título y para estructurar el contenido, de esta forma ayudamos a los bots a entender la importancia del contenido.</li>
+            <br>
+            <li>&lt;img&gt;: Usamos la etiqueta IMG para mostrar imágenes dentro del contenido. Necesita el atributo src para funcionar, ya que será donde indicaremos desde donde tiene que mostrar la imagen.</li>
+            <br>
+            <li>&lt;(ol-li/ul-li)&gt;: Las etiquetas OL y LI nos sirven para crear listas, OL para listas ordenadas y UL para listas sin orden. Dentro de las listas, los elementos se identifican con la etiqueta LI.</li>
+            <br>
+            <li>&lt;p&gt;: Etiqueta que nos sirve para agrupar texto dentro de un parágrafo. El propósito es poder hacer el contenido más fácil de leer y organizado.</li>
+        </ol>
+    </section>
+
+    <footer>
+        <table>
+            <tr>
+                <th>Quienes somos:</th>
+                <th>cliente:</th>
+                <th>informaciones:</th>
+                <th>conctacto:</th>
+            </tr>
+
+            <tr>
+                <td>En JG-tecno, somos una mini empresa de tecnología dedicada a desarrollar soluciones innovadoras en software y tecnología. Nos especializamos en la creación de programas personalizados que transforman ideas en herramientas prácticas para personas y empresas.</td>
+                <td>atencion al cliente</td>
+                <td>politicas de privacidad</td>
+                <td>telefono:849-999-3344</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>   
+                <td>terminos y condiciones</td>
+                <td>JG-tecno@gmail.com</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>politicas de cookies</td>
+                <td><a href="https://x.com/?lang=es"><img src="../imagenes/x.png" id="social" alt="No se pudo visualizar">X</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.instagram.com/"><img src="../imagenes/instagram.jpg" id="social1" alt="No se pudo visualizar">Instagram</a></td>
+            </tr>
+    
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.facebook.com/"><img src="../imagenes/facebook.jfif"  id="social2"  alt="No se pudo visualizar">facebook</a></td>
+            </tr>
+        </table>
+   </footer>
+</body>
+</html>

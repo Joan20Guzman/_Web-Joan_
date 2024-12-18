@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../imagenes/logo.png" alt="No se pudo visualizar el contenido">
+        <a href="../index.html">inicio</a>
+        <a href="etiquetas.html">Etiquetas</a>
+        <a href="atributos.html">Atributos</a>
+        <a href="css.html">CSS</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="acercade.html">Acerca</a>
+    </header>
+    <br>
+    <nav>
+        <h1>Contenidos</h1>
+     <ol id="lista1">
+            <li><a href="#global">Atributos globales.</a></li>
+            <li><a href="#form">Atributos form.</a></li>
+            <li><a href="#input">Atributos input.</a></li>
+     </ol>
+    </nav>
+    <br>
+    <section id="global">
+        <h2>Atributos globales</h2>
+        <p>El grupo de los atributos globales fue introducido en HTML5. Esto significa que los elementos introducidos en HTML5 también soportan el uso de atributos globales. No obstante, hay algunas excepciones. Por ejemplo, el atributo lang no tendrá efecto en un elemento sin contenido, y el atributo spellcheck no tendrá afectación en el comportamiento de un párrafo.</p>
+        <article>
+            <h3>Lista de atributos globales ordenados por nombre:</h3>
+            <table>
+                <tr>
+                    <th>Nombre del atributo</th>
+                    <th>Defincion</th>
+                </tr>
+                <tr>
+                    <td>accesskey</td>
+                    <td>Define una tecla que ejecutará una acción asociada al elemento cuando el usuario la pulse.</td>
+                </tr>
+                <tr>
+                    <td>autocapitalize</td>
+                    <td>Convierte a mayúsculas de forma automática un texto que ha sido entrado por el usuario.</td>
+                </tr>
+                <tr>
+                    <td>autofocus</td>
+                    <td>Coloca el foco sobre el elemento justo cuando se termina de cargar el documento HTML.</td>
+                </tr>
+                <tr>
+                    <td>autocomplete</td>
+                    <td>Provee información sobre cómo los navegadores web deben hacer sugerencias de autocompletado.</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>Define el nombre de una clase o una lista de clases para aplicar estilos en cascada (CSS).</td>
+                </tr>
+                <tr>
+                    <td>contenteditable</td>
+                    <td>Indica si el elemento en cuestión debería ser editable o no para el usuario.</td>
+                </tr>
+                <tr>
+                    <td>data-*</td>
+                    <td>Introduce datos personalizados para el intercambio de información entre el HTML y la representación del DOM.</td>
+                </tr>
+                <tr>
+                    <td>dir</td>
+                    <td>Especifica la dirección en la que el texto está escrito. Útil para ciertos idiomas.</td>
+                </tr><tr>
+                    <td>draggable</td>
+                    <td>Indica si el elemento puede ser arrastrado.</td>
+                </tr>
+                <tr>
+                    <td>enterkeyhint</td>
+                    <td>Muestra un icono de la tecla Enter en teclados virtuales.</td>
+                </tr>
+                <tr>
+                    <td>hidden</td>
+                    <td>Indica que el elemento vinculado a este atributo no debe ser mostrado por el navegador web.</td>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>Define el nombre de un identificador único que puede ser usado tanto en CSS como en JS.</td>
+                </tr><tr>
+                    <td>inputmode</td>
+                    <td>Provee qué tipo de mecanismo de entrada debe usarse para entrar datos en elementos editables.</td>
+                </tr>
+                <tr>
+                    <td>is</td>
+                    <td>Especifica un nombre para un elemento personalizado que extiende a otro elemento.</td>
+                </tr>
+                <tr>
+                    <td>itemid</td>
+                    <td>Indica un identificador único y global para ser usado en un ítem con microdatos.</td>
+                </tr>
+                <tr>
+                    <td>itemprop</td>
+                    <td>Añade propiedades a un ítem, pensado para ser usado con microdatos.</td>
+                </tr> 
+                <tr>
+                    <td>itemref</td>
+                    <td>	Proporciona una lista de identificadores de ítems con propiedades adicionales, para microdatos.</td>
+                </tr> 
+                <tr>
+                    <td>itemscope</td>
+                    <td>Sirve para especificar que el HTML contenido en un bloque se refiere a un término de microdatos.</td>
+                </tr> 
+                <tr>
+                    <td>itemtype</td>
+                    <td>Especifica la URL que se empleará para definir las propiedades de los microdatos.</td>
+                </tr> 
+                <tr>
+                    <td>lang</td>
+                    <td>Define el lenguaje utilizado en el contenido del elemento en cuestión.</td>
+                </tr> 
+                <tr>
+                    <td>nonce</td>
+                    <td>Indica un número criptográfico único («nonce») para determinar si un recurso externo será cargado.</td>
+                </tr>
+                <tr>
+                    <td>slot</td>
+                    <td>Permite especificar el nombre del &lt;slot&gt; en el cual se emplaza el elemento vinculado.</td>
+                </tr> 
+                <tr>
+                    <td>spellcheck</td>
+                    <td>Indica si el elemento debe estar sujeto a revisiones ortográficas o gramaticales.</td>
+                </tr> 
+                <tr>
+                    <td>style</td>
+                    <td>Permite introducir declaraciones CSS que se aplicarán directamente sobre el elemento.</td>
+                </tr> 
+                <tr>
+                    <td>tabindex</td>
+                    <td>Establece el orden de navegación mediante la tecla tabuladora (Tab).</td>
+                </tr> 
+                <tr>
+                    <td>title</td>
+                    <td>Permite establecer un título a un elemento para mejorar la accesibilidad.</td>
+                </tr> 
+                <tr>
+                    <td>translate</td>
+                    <td>Controla si el navegador debe traducir o no el contenido del elemento y el de sus hijos.</td>
+                </tr>  
+            </table>
+        </article>
+    </section>
+    <section id="form">
+        <h2>Atributos form</h2>
+        <p>Un formulario es un conjunto de controles (botones, cajas de texto, casillas de verificación, botones radio, etc) que permiten al usuario introducir datos y enviarlos al servidor web para su procesamiento.</p>
+        <article>
+            <h3>Lista de atributos form ordenados por nombre:</h3>
+            <table>
+                <tr>
+                    <th>Nombre del atributo</th>
+                    <th>Definicion</th>
+                </tr>
+                <tr>
+                    <td>action</td>
+                    <td>Especifica la URL a la que se enviarán los datos del formulario cuando se envía. </td>
+                </tr> 
+                <tr>
+                    <td>method</td>
+                    <td>Define el método HTTP para enviar los datos del formulario. Los valores más comunes son GET y POST.</td>
+                </tr> <tr>
+                    <td>enctype</td>
+                    <td>Especifica cómo deben codificarse los datos del formulario antes de enviarse al servidor.</td>
+                </tr> 
+                <tr>
+                    <td>target</td>
+                    <td>Indica dónde se abrirá la respuesta después de enviar el formulario (_self, _blank, etc.).</td>
+                </tr> <tr>
+                    <td>autocomplete</td>
+                    <td>Controla si el navegador debe autocompletar los campos del formulario. Valores: on o off.</td>
+                </tr> 
+                <tr>
+                    <td>novalidate</td>
+                    <td>Un atributo booleano que desactiva la validación del formulario al enviarlo.</td>
+                </tr> <tr>
+                    <td>name</td>
+                    <td>Define el nombre del formulario, útil para scripts o identificación en el código.</td>
+                </tr> 
+                <tr>
+                    <td>accept-charset</td>
+                    <td>Especifica el conjunto de caracteres que el servidor acepta para los datos enviados.</td>
+                </tr> <tr>
+                    <td>rel</td>
+                    <td>Define la relación entre el formulario y un recurso externo vinculado, como una URL.</td>
+                </tr> 
+            </table>
+        </article>
+    </section>
+    <section id="input">
+        <h2>Atributos Input</h2>
+        <p>La etiqueta &lt;input&gt; en HTML es un elemento importante para cualquier desarrollador web debido a su versatilidad y su capacidad para recopilar información del usuario, ¡por eso es una herramienta fundamental en la creación de formularios web interactivos! <br>
+        estaremos hablando de los atributos de esta estiqueta.</p>
+        <article>
+            <h3>Lista de atributos form ordenados por nombre:</h3>
+            <table>
+                <tr>
+                    <th>Nombre del atributo</th>
+                    <th>Definicon</th>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>Define el tipo de control de entrada (texto, contraseña, email, etc.).</td>
+                </tr> 
+                <tr>
+                    <td>name</td>
+                    <td>Especifica el nombre del campo de entrada, utilizado para identificar los datos enviados.</td>
+                </tr> <tr>
+                    <td>value</td>
+                    <td>Establece el valor inicial del campo de entrada.</td>
+                </tr> 
+                <tr>
+                    <td>placeholder</td>
+                    <td>Muestra un texto guía dentro del campo cuando está vacío.</td>
+                </tr> <tr>
+                    <td>required</td>
+                    <td>Atributo booleano que obliga al usuario a llenar el campo antes de enviar el formulario.</td>
+                </tr> 
+                <tr>
+                    <td>disabled</td>
+                    <td>Desactiva el campo de entrada, impidiendo su edición.</td>
+                </tr> <tr>
+                    <td>readonly</td>
+                    <td>Hace que el campo sea de solo lectura, no editable por el usuario.</td>
+                </tr> 
+                <tr>
+                    <td>maxlength</td>
+                    <td>Especifica la cantidad máxima de caracteres que se pueden ingresar.</td>
+                </tr> <tr>
+                    <td>min</td>
+                    <td>Define el valor mínimo aceptable para campos de tipo numérico, fecha o rango.</td>
+                </tr> 
+                <tr>
+                    <td>max</td>
+                    <td>Define el valor máximo aceptable para campos de tipo numérico, fecha o rango.</td>
+                </tr> <tr>
+                    <td>step</td>
+                    <td>Especifica el intervalo entre valores válidos para campos de tipo numérico o rango.</td>
+                </tr> 
+                <tr>
+                    <td>pattern</td>
+                    <td>Define una expresión regular para validar la entrada de texto.</td>
+                </tr> <tr>
+                    <td>autofocus</td>
+                    <td>Hace que el campo de entrada reciba el foco automáticamente al cargar la página.</td>
+                </tr> 
+                <tr>
+                    <td>checked</td>
+                    <td>Marca un campo de tipo checkbox o radio como seleccionado por defecto.</td>
+                </tr>
+                <tr>
+                    <td>size</td>
+                    <td>Especifica el tamaño visible del campo de texto en caracteres.</td>
+                </tr> <tr>
+                    <td>multiple</td>
+                    <td>Permite seleccionar múltiples valores en campos de tipo file o email.</td>
+                </tr> 
+                <tr>
+                    <td>autocomplete</td>
+                    <td>Controla si el navegador puede autocompletar el campo (on o off).</td>
+                </tr>
+                <tr>
+                    <td>list</td>
+                    <td>Conecta el campo con un elemento &lt;datalist&lt; para ofrecer sugerencias al usuario.</td>
+                </tr> <tr>
+                    <td>accept</td>
+                    <td>Define los tipos de archivos permitidos en campos de tipo file.</td>
+                </tr> 
+                <tr>
+                    <td>alt</td>
+                    <td>Proporciona un texto alternativo para imágenes de tipo image.</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+    <footer>
+        <table>
+            <tr>
+                <th>Quienes somos:</th>
+                <th>cliente:</th>
+                <th>informaciones:</th>
+                <th>conctacto:</th>
+            </tr>
+
+            <tr>
+                <td>En JG-tecno, somos una mini empresa de tecnología dedicada a desarrollar soluciones innovadoras en software y tecnología. Nos especializamos en la creación de programas personalizados que transforman ideas en herramientas prácticas para personas y empresas.</td>
+                <td>atencion al cliente</td>
+                <td>politicas de privacidad</td>
+                <td>telefono:849-999-3344</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>   
+                <td>terminos y condiciones</td>
+                <td>JG-tecno@gmail.com</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>politicas de cookies</td>
+                <td><a href="https://x.com/?lang=es"><img src="../imagenes/x.png" id="social" alt="No se pudo visualizar">X</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.instagram.com/"><img src="../imagenes/instagram.jpg" id="social1" alt="No se pudo visualizar">Instagram</a></td>
+            </tr>
+    
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><a href="https://www.facebook.com/"><img src="../imagenes/facebook.jfif"  id="social2"  alt="No se pudo visualizar">facebook</a></td>
+            </tr>
+        </table>
+   </footer>
+</body>
+</html>
